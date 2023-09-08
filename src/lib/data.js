@@ -7,4 +7,5 @@ export const adibData = [
                     bookCount: '20',
                     address:"Toshkent, Uzbekistan"
           }
+          
 ]
