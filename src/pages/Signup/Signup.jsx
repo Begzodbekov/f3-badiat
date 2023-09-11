@@ -13,7 +13,7 @@ function Signup() {
         </div>
         <div className="right__wrapper">
           <h2 className='signup__tittle'>Sign up</h2>
-          <p className='signup__info'>Already have an account? <Link>Sign in</Link> </p>
+          <p className='signup__info'>Already have an account? <Link to={'/signin'}>Sign in</Link> </p>
           <input className='first__inp' type="text" placeholder='First name' />
           <input className='sec__inp' type="text" placeholder='Last name' />
           <input className='phone__inp' type="text" placeholder='Phone' />
