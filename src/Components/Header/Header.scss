@@ -2,12 +2,20 @@
     background: #191919;
 
 }
+.Headers{
+    display: none;
+}
 .header_inner{
 .nav{
+    padding-top: 15px;
     text-align: center;
     margin: 0 auto;
     display: flex;
     justify-content: space-between; 
+    width: 1700px;
+height: 80px;
+flex-shrink: 0;
+margin-left: -200px;
     ul{
         display: flex;
         justify-content: space-between;
@@ -15,6 +23,50 @@
         a{
             color: #fff;
         }
+        li:nth-child(8){
+            a{
+                background-color: #C9AC8C;
+                padding: 10px 30px;
+                text-align: center;
+                border-radius: 10px;
+
+            }
+        }
+        li:nth-child(9){
+            img{
+                width: 30px;
+                border-radius: 50%;
+                margin-right: -90px;
+            }
+        }
+        .login{
+            background-color: #C9AC8C;
+            padding: 10px 35px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .logins{
+            display: none;
+        }
+        .none{
+            display: none;
+        }
+        .odam{
+            display: block;
+        }
     }
 }
+}
+.active{
+    position: relative;
+    ::after{
+        content: '';
+        width: 89.052px;
+        background-color: white;
+        height: 2px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+
+    }
 }
