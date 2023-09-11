@@ -19,7 +19,7 @@ function Signup() {
           <input className='phone__inp' type="text" placeholder='Phone' />
           <input className='email__inp' type="text" placeholder='Email' />
           <input className='passwor__inp' type="text" placeholder='Password' />
-          <button>Next step</button>
+          <button className='signup__btn'>Next step</button>
         </div>
       </div>
      </div>
