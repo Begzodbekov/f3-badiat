@@ -8,10 +8,53 @@ function Header() {
     <div className='Header'>
           <div className="container">
                     <div className="header_inner">
-                              <nav>
+                              <nav className='nav'>
                                  <div className="logo">
                                     <Link><img src={logo} alt="img" /></Link>
                                  </div>
+                                 <ul>
+                                    <li>
+                                        <Link>
+                                            Bosh sahifa
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link>
+                                            
+                                            Kitoblar
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link>  
+                                            Nasr
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link>
+                                            Nazm   
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link>
+                                            Maqolalar
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link>
+                                            Forum
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link>
+                                              login
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link>
+                                              
+                                        </Link>
+                                    </li>
+                                 </ul>
                               </nav>
                     </div>
           </div>
