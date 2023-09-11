@@ -1,0 +1,44 @@
+.container {
+    width: 1440px;
+}
+.AuthorD{
+    background-color: #191919;
+    width: 100%;
+}
+
+.left__text {
+    width: 441px;
+    height: 79.308px;
+    flex-shrink: 0;
+
+    .left__text1 {
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 144.4%;
+    }
+
+    .left__text2 {
+        color: #C9AC8C;
+        font-size: 39px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 144.4%;
+    }
+
+    .left__text3 {
+        color: rgba(255, 255, 255, 0.60);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 144.4%;
+    }
+}
+
+.img1 {
+    width: 582px;
+    height: 779.327px;
+    margin-top: 79px;
+    margin-bottom: 166px;
+}
