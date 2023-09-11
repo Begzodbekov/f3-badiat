@@ -1,0 +1,99 @@
+.wrapper{
+    width: 1152px;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left__wrapper{
+    background-color: #C9AC8CED;
+    padding: 100px 38px;
+}
+.signup__img{
+    width: 500px;
+    height: 500px;
+}
+.right__wrapper{
+    width: 576px;
+    height: 700px;
+    border: 1px solid red;
+}
+.signup__tittle{
+    margin-top: 75px;
+    margin-left: 108px;
+    font-size: 36px;
+    font-weight: 900;
+}
+.signup__info{
+    margin-left: 108px;
+    margin-top: -25px;
+    a{
+        text-decoration: none;
+        color: #549FF9;
+    }
+}
+.first__inp{
+    padding-left: 29px;
+    padding-top: 21px;
+    padding-bottom: 9.88px;
+    padding-right: 187px;
+    margin-top: 16px;
+    margin-left: 108px;
+    border-radius: 10px;
+    border: 1px solid #B4B4BB;
+    color: #AAA;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sec__inp{
+    padding-left: 29px;
+    padding-top: 15px;
+    padding-bottom: 10.87px;
+    padding-right: 187px;
+    margin-top: 16px;
+    margin-left: 108px;
+    border-radius: 10px;
+    border: 1px solid #B4B4BB;
+    color: #AAA;
+    font-size: 14px;
+    font-weight: 400;
+}
+.phone__inp{
+    padding-left: 29px;
+    padding-top: 17px;
+    padding-bottom: 8.88px;
+    padding-right: 187px;
+    margin-top: 16px;
+    margin-left: 108px;
+    border-radius: 10px;
+    border: 1px solid #B4B4BB;
+    color: #AAA;
+    font-size: 14px;
+    font-weight: 400;
+}
+.email__inp{
+    padding-left: 29px;
+    padding-top: 17px;
+    padding-bottom: 8.88px;
+    padding-right: 187px;
+    margin-top: 16px;
+    margin-left: 108px;
+    border-radius: 10px;
+    border: 1px solid #B4B4BB;
+    color: #AAA;
+    font-size: 14px;
+    font-weight: 400;
+}
+.passwor__inp{
+    padding-left: 29px;
+    padding-top: 17px;
+    padding-bottom: 8.87px;
+    padding-right: 187px;
+    margin-top: 16px;
+    margin-left: 108px;
+    border-radius: 10px;
+    border: 1px solid #B4B4BB;
+    color: #AAA;
+    font-size: 14px;
+    font-weight: 400;
+}
