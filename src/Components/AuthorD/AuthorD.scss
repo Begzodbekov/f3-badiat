@@ -173,5 +173,56 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 63px;
+    margin-top: 200px;
+}
+
+.books {
+    width: 165px;
+    height: 402px;
+}
+
+.books__con {
+    width: 539px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 10px;
+
+    .books__title {
+        color: #C9AC8C;
+        text-align: center;
+        font-family: Rotterburg Stylish FREE;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 17px;
+    }
+
+    .books__img {
+        margin-bottom: 17px;
+    }
+}
+
+.part2 {
+    margin-top: 100px;
+}
+
+.head__part3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.see__all {
+    height: 0px;
+    margin-top: 211px;
+    margin-left: 330px;
+    color: #FFF;
+    text-align: center;
+    font-family: Steinbeck;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
