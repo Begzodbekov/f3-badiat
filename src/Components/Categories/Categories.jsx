@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { adibData } from '../../lib/data'
 import './Categories.scss'
 import { Link } from 'react-router-dom'
 function Categories() {
+    const [from, setFrom]=useState('Temuriylar davri ')
     return (
         <div className='Categories'>
             <div className="container">
@@ -10,19 +11,23 @@ function Categories() {
                    
                     <ul className='categories__list'>
                         {
-                            adibData?.map((item,index)=>(
+                            adibData?.filter((item)=> item.from == from).map((item,index)=>(
                                 <li  key={index} className='categories__item'>
                                     <Link to={`/author/${item.id}`}>
                                         <img src={item.img} alt="img" />
-                                        <span>{item.name}</span>
-                                        <p>{item.age}</p>
+                                        <span className='name'>{item.name}</span>
+                                        <p className='age'>{item.age}</p>
                                         <div className="categories__item__bottom">
                                             <span>
-                                            <i class="bi bi-file-earmark-spreadsheet">{item.bookCount}</i>
-                                            
+                                            <i className="bi bi-file-earmark-spreadsheet"></i>
+                                            <p>
+                                                {item.bookCount}
+                                            </p>
                                             </span>
                                             <span>
-                                            <i class="bi bi-headphones">{item.bookCount}</i>
+                                            <i className="bi bi-headphones"></i>
+                                            <p>{item.bookCount}</p>
+                                            <p></p>
                                             </span>
                                         </div>
                                     </Link>

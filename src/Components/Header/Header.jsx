@@ -8,7 +8,7 @@ function Header() {
   const location = useLocation().pathname
   return (
     <div className={location =='/login'?'Headers' :'Header'}>
-          <div className="container">
+        <div className="container">
                     <div className="header_inner">
                               <nav className='nav'>
                                  <div className="logo">
@@ -20,8 +20,10 @@ function Header() {
                                             Bosh sahifa
                                         </Link>
                                     </li>
+
                                     <li onClick={()=>setActive(2)} className={active == 2?'active': null}>
                                         <Link>
+
                                             Kitoblar
                                         </Link>
                                     </li>
@@ -66,11 +68,12 @@ function Header() {
                                         </Link>
                                     </li>
                                  </ul>
-                              </nav>
+                            </nav>
                     </div>
           </div>
     </div>
-  )
+    
+    )
 }
 
 export default Header
