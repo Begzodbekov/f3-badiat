@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './BooksHero.scss'
 import Hozircha from '../../asests/img/AuthorImg1.png'
 import { useParams } from 'react-router-dom'
+import { adibData } from '../../lib/data'
 function BooksHero() {
   const {slug} = useParams()
   // const [booksv]
