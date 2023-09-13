@@ -81,26 +81,35 @@
 
 .categories__center {
 
-    ul {
+    .ul {
         display: flex;
         justify-content: space-between;
         width: 1000px;
-
-        li {
+        .actives{
+        color: #C9AC8C;
+             
+         }
+        button {
             color: rgba(255, 255, 255, 0.60);
-            font-family: Steinbeck;
             font-size: 20px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            border: none;
+            background-color: transparent;
+            
         }
     }
 }
 
 .bottom {
     width: 100%;
-    position: absolute;
     padding-top: 28px;
     background-color: #191919;
-    padding-left: 510px;
+    padding-left: 76px;
 }
+
+// .li:hover{
+//     color: rgba(250, 193, 193, 0.6);
+    
+// }
