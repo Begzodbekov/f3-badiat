@@ -35,15 +35,6 @@ function AuthorD() {
             </div>
             <div className="part3">
               <h4 className='part3__text1'>Asarlari</h4>
-              <ul>
-                {
-                  bookData2?.map((item,index)=>(
-                      <li key={index}>
-                          
-                      </li>
-                  ))
-                }
-              </ul>
             </div>
           </div>
         </div>
