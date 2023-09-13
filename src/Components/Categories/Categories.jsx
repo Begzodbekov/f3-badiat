@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { adibData } from '../../lib/data'
 import './Categories.scss'
 import { Link } from 'react-router-dom'
 function Categories() {
+    const [from, setFrom]=useState('Temuriylar davri ')
     return (
         <div className='Categories'>
             <div className="container">
@@ -10,7 +11,7 @@ function Categories() {
                    
                     <ul className='categories__list'>
                         {
-                            adibData?.map((item,index)=>(
+                            adibData?.filter((item)=> item.from == from).map((item,index)=>(
                                 <li  key={index} className='categories__item'>
                                     <Link to={`/author/${item.id}`}>
                                         <img src={item.img} alt="img" />
@@ -26,6 +27,7 @@ function Categories() {
                                             <span>
                                             <i className="bi bi-headphones"></i>
                                             <p>{item.bookCount}</p>
+                                            <p></p>
                                             </span>
                                         </div>
                                     </Link>
