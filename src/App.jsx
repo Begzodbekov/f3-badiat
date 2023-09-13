@@ -8,6 +8,7 @@ import Books from './pages/Books/Books';
 
 import Author from './pages/Author/Author';
 import Signin from './pages/Signin/Signin';
+import Account from './pages/Account/Account';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
 
 
       <Routes>
+      <Route path='/account' element={<Account/>} />
         <Route path='/' element={<Home/>} />
         <Route path='/nasr' element ={<Nasr/>}></Route>
         <Route path='/books' element ={<Books/>}></Route>
