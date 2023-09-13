@@ -1,6 +1,7 @@
 import React from 'react'
 import AuthorImg1 from '../../asests/img/AuthorImg1.png'
 import './AuthorD.scss'
+import { bookData2 } from '../../lib/bookData2'
 function AuthorD() {
   return (
     <div className='AuthorD'>
@@ -31,6 +32,18 @@ function AuthorD() {
             <div className="part2">
               <i class="bi bi-bookmark mark"> Ijodi</i>
               <p className='mark__text1'>Yozuvchining ilk asari 1962-yilda „Poʻlat chavandoz“ nomida ocherklar toʻplami tarzida nashrdan chiqdi. Ammo yozuvchiga muvaffaqiyat keltirgan asar 1970-yilda nashr qilingan „Bahor qaytmaydi“ qissasi boʻldi.</p>
+            </div>
+            <div className="part3">
+              <h4 className='part3__text1'>Asarlari</h4>
+              <ul>
+                {
+                  bookData2?.map((item,index)=>(
+                      <li key={index}>
+                          
+                      </li>
+                  ))
+                }
+              </ul>
             </div>
           </div>
         </div>
