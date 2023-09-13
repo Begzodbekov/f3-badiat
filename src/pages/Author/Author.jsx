@@ -12,16 +12,7 @@ function Author() {
   return (
     <div>
         <AuthorD/>
-        <ul>
-          {
-            books.filter((item)=> item.adibId == slug).map((item)=> (
-              <li>
-                <img width={100} src={item.img} alt="" />
-                <b>{item.adibId}</b>
-              </li>
-            ))
-          }
-        </ul>
+
     </div>
   )
 }
