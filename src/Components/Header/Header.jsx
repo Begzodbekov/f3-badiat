@@ -20,14 +20,8 @@ function Header() {
                                             Bosh sahifa
                                         </Link>
                                     </li>
-<<<<<<< HEAD
-                                    <li>
-                                        <Link to='/books'>
-                                            
-=======
                                     <li onClick={()=>setActive(2)} className={active == 2?'active': null}>
                                         <Link>
->>>>>>> 0e6957c502152b3e6913532e46264abdddef265e
                                             Kitoblar
                                         </Link>
                                     </li>
