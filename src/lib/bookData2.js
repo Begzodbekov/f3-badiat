@@ -1404,18 +1404,6 @@ export const bookData2 = [{
         pages: 300,
         category: "Tarixi",
         nashiryot: "Hilol Nashiryoti"
-    },{
-        id: 149,
-        adibId: 20,
-        name: "Uchlik",
-        img: "https://kitobxon.com/img_knigi/4656.jpg",
-        priceQ: "20000",
-        priceA: "15000",
-        priceE: "10000",
-        count: 1500,
-        pages: 300,
-        category: "Tarixi",
-        nashiryot: "Hilol Nashiryoti"
     },
     
 ]
