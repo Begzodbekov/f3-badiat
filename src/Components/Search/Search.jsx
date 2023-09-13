@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react'
 import './Search.scss'
 import { adibData } from '../../lib/data'
+
 function Search() {
     let arrCategory = []
     adibData.forEach((item)=>{
