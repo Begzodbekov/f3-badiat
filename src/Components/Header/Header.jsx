@@ -19,7 +19,7 @@ function Header() {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link>
+                                        <Link to='/books'>
                                             
                                             Kitoblar
                                         </Link>

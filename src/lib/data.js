@@ -171,7 +171,62 @@ export const adibData = [
             img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tm2B3iyoduLctesuBSsu2DvJKahNtesiIg&usqp=CAU",
             age:"(1919-2000)",
             bookCount:10,
+
+            address:"Bukhara,Uzbekistan"
+          },
+
+
+
+
+
+
+
+
+
+
+
+
+
+          {
+            id:26,
+            name:"Tohir Sabirov",
+            img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tm2B3iyoduLctesuBSsu2DvJKahNtesiIg&usqp=CAU",
+            age:"(1974-2008)",
+            bookCount:10,
+            address:"Toshkent,Uzbekistan"
+          },
+          {
+            id:27,
+            name:"Хайдар Алиев ",
+            img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tm2B3iyoduLctesuBSsu2DvJKahNtesiIg&usqp=CAU",
+            age:"(1919-2000)",
+            bookCount:10,
+            address:"Bukhara,Uzbekistan"
+          },
+          {
+            id:28,
+            name:"Хайдар Алиев ",
+            img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tm2B3iyoduLctesuBSsu2DvJKahNtesiIg&usqp=CAU",
+            age:"(1919-2000)",
+            bookCount:10,
+            address:"Bukhara,Uzbekistan"
+          },
+          {
+            id:29,
+            name:"Хайдар Алиев ",
+            img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tm2B3iyoduLctesuBSsu2DvJKahNtesiIg&usqp=CAU",
+            age:"(1919-2000)",
+            bookCount:10,
+            address:"Bukhara,Uzbekistan"
+          },
+          {
+            id:30,
+            name:"Хайдар Алиев ",
+            img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-tm2B3iyoduLctesuBSsu2DvJKahNtesiIg&usqp=CAU",
+            age:"(1919-2000)",
+            bookCount:10,
             address:"Bukhara,Uzbekistan"
           },
 ]
+
 
