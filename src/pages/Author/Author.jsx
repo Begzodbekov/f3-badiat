@@ -12,10 +12,7 @@ function Author() {
   return (
     <div>
         <AuthorD/>
-<<<<<<< HEAD
-=======
 
->>>>>>> d9a6b1bcbd1dc9a637e6aa449d4b24255010e08f
     </div>
   )
 }
