@@ -20,7 +20,6 @@ function Header() {
                                             Bosh sahifa
                                         </Link>
                                     </li>
-                                            
 
                                     <li onClick={()=>setActive(2)} className={active == 2?'active': null}>
                                         <Link>
