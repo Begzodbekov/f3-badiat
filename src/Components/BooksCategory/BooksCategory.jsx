@@ -4,6 +4,8 @@ import { bookData2 } from "../../lib/bookData2";
 import Hero from "../Hero/Hero";
 import Search from "../Search/Search";
 import "./BooksCategory.scss";
+import { books } from "../../lib/bookData";
+import { bookData3 } from "../../lib/bookData3";
 
 function BooksCategory() {
   return (

@@ -22,7 +22,7 @@ function Header() {
                                     </li>
 
                                     <li onClick={()=>setActive(2)} className={active == 2?'active': null}>
-                                        <Link>
+                                        <Link to='/books'>
 
                                             Kitoblar
                                         </Link>
@@ -48,12 +48,12 @@ function Header() {
                                         </Link>
                                     </li>
                                     <li className={location !='/' ? 'logins': 'login'}>
-                                        <Link >
+                                        <Link to='/signin'>
                                               login
                                         </Link>
                                     </li>
                                     <li className={location !='/' ? 'logins': 'login'}>
-                                        <Link>
+                                        <Link to='/signup'>
                                               register
                                         </Link>
                                     </li>
