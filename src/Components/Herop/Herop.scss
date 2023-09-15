@@ -84,42 +84,56 @@
 
 .statistic{
     width: 345px;
-    height: 422px;
-    border: 1px solid red;
+    height: 450px;
     margin-top: 31px;
     background-color: #2F2F2F;
     color: #FFFFFF4D;
     font-size: 24px;
-    .bi{
-        margin-left: 300px;
+    .statistic_item1{
+        h2{
+            font-size:22px ;
+        }
+        display: flex;
+        .bi_ph{
+            margin-left: 92px;
+            margin-top: 12px;
+        }
     }
     h2{
         color: #C9AC8C;
+        margin-left: 28px;
+        margin-top: 15px;
     }
     li{
         width: 303px;
         height: 50px;
-        border: 1px solid red;
         line-height: 15px;
+        margin-top: 31px;
         h5{
             font-size: 16px;
-            margin-left: 43px;
+            margin-left: 45px;
             margin-top: -50px;
+            color: white;
         }
         p{
             font-size: 12px;
-            margin-left: 260px;
+            margin-left: 270px;
             margin-top: -28px;
+            color: rgba(255, 255, 255, 0.60);
         }
         button{
             width: 91px;
             height: 21px;
             margin-left: 192px;
-            margin-top: -100px;
+            margin-top: -190px;
             font-size: 10px;
+            position: absolute;
+            top: 732px;
+            left: 270px;
             border: none;
             background-color: #C9AC8C;
             color: #3C2710;
+            border-radius: 3px;
         }
         div{
             width: 147px;
@@ -134,8 +148,65 @@
             margin-left: 100px;
         }
         .seco__img{
-            margin-left: 30px;
+            margin-left: 45px;
+            margin-top: -5px;
         }
         }
 
+        .btn2{
+                    width: 91px;
+                    height: 21px;
+                    margin-left: 192px;
+                    margin-top: -28px;
+                    font-size: 10px;
+                    position: absolute;
+                    top: 732px;
+                    left: 270px;
+                    border: none;
+                    background-color: #C9AC8C;
+                    color: #3C2710;
+                    border-radius: 3px;
+        }
+        .btn3{
+            width: 91px;
+            height: 21px;
+            margin-left: 192px;
+            margin-top: 53px;
+            font-size: 10px;
+            position: absolute;
+            top: 732px;
+            left: 270px;
+            border: none;
+            background-color: #C9AC8C;
+            color: #3C2710;
+            border-radius: 3px;
+        }
+        .btn4{
+            width: 91px;
+            height: 21px;
+            margin-left: 192px;
+            margin-top: -109px;
+            font-size: 10px;
+            position: absolute;
+            top: 732px;
+            left: 270px;
+            border: none;
+            background-color: #C9AC8C;
+            color: #3C2710;
+            border-radius: 3px;
+        }
+}
+.last__btn{
+    width: 289px;
+    padding-top: 6px;
+    padding-left: 50px;
+    padding-right: 27px;
+    padding-bottom: 12px;
+    background-color: #C9AC8C;
+    border-radius: 5px;
+    color: #64513D;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 24px;
+    border: none;
 }
