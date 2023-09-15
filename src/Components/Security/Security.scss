@@ -1,0 +1,113 @@
+.container {
+    width: 1200px;
+}
+
+.Security {
+    width: 712.081px;
+    height: 373px;
+    flex-shrink: 0;
+    margin: 86px auto;
+}
+
+.btn__security {
+    width: 142px;
+    height: 43px;
+    flex-shrink: 0;
+    background-color: #152540;
+    color: white;
+}
+
+.Sec__title {
+    color: #212121;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.part2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.email {
+    color: #464E5F;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.confr__pass {
+    color: #464E5F;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pass {
+    color: #464E5F;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Pass__con {
+    width: 708px;
+    height: 44px;
+    transform: rotate(-0.106deg);
+    flex-shrink: 0;
+}
+
+.new__pass {
+    color: #464E5F;
+    font-family: Poppins;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.email.sec {
+    width: 708px;
+    height: 44px;
+    border-radius: 4px;
+    background: #F3F6F9;
+}
+
+.Password__sec {
+    width: 708.08px;
+    height: 45.308px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #F3F6F9;
+}
+
+.New__password__inp {
+    width: 340px;
+    height: 44px;
+    transform: rotate(-0.106deg);
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #F3F6F9;
+}
+
+.confrim__password {
+    width: 340px;
+    height: 44px;
+    transform: rotate(-0.106deg);
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #F3F6F9;
+}
+
+.email.con {
+    width: 709.015px;
+}

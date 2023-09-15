@@ -9,6 +9,7 @@ import Author from './pages/Author/Author';
 import Signin from './pages/Signin/Signin';
 import Account from './pages/Account/Account';
 import Booksv from './pages/Booksv/Booksv';
+import Security from './Components/Security/Security';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/signup' element={<Signup />}></Route>
         <Route path='/signin' element={<Signin />}></Route>
         <Route path='/book-view' element={<Booksv/>}></Route>
+        <Route path='/security' element={<Security/>}></Route>
       </Routes>
 
     </div>
