@@ -4,6 +4,9 @@ import farruxImg from '../../asests/img/farrux-img.png'
 import bgiHerop from '../../asests/img/bgi-herop.png'
 import statiscImg from '../../asests/img/statisc-img.png'
 import heropProgress from '../../asests/img/herop-progress.svg'
+import heropSec from '../../asests/img/heropsec.svg'
+import heropThird from '../../asests/img/herop-third.svg'
+import heropFour from '../../asests/img/herop-four.svg'
 function Herop() {
   return (
     <div className='herop'>
@@ -29,18 +32,41 @@ function Herop() {
           </div>
         </div>
         <div className="statistic">
-          <h2>Hozir o’qilmoqda...</h2>
-              <i class="bi bi-grid-fill"></i>
+          <div className='statistic_item1'>
+              <h2>Hozir o’qilmoqda...</h2>
+              <i class="bi bi-grid-fill bi_ph"></i>
+          </div>
           <ul>  
             <li>
               <img src={statiscImg} alt="" />
               <h5>Ikki eshik orasi</h5>
               <p>96%</p>
               <img className='seco__img' src={heropProgress} alt="" />
-              <button>Yangilash <i class="bi bi-arrow-clockwise"></i></button>
+              <button>Yangilash <i class="bi1 bi-arrow-clockwise"></i></button>
             </li>
-            
+            <li>
+              <img src={statiscImg} alt="" />
+              <h5>Ikki eshik orasi</h5>
+              <p>96%</p>
+              <img className='seco__img' src={heropSec} alt="" />
+              <button className='btn2'>Yangilash <i class="bi1 bi-arrow-clockwise"></i></button>
+            </li>
+            <li>
+              <img src={statiscImg} alt="" />
+              <h5>Ikki eshik orasi</h5>
+              <p>96%</p>
+              <img className='seco__img' src={heropThird} alt="" />
+              <button className='btn3'>Yangilash <i class="bi1 bi-arrow-clockwise"></i></button>
+            </li>
+            <li>
+              <img src={statiscImg} alt="" />
+              <h5>Ikki eshik orasi</h5>
+              <p>96%</p>
+              <img className='seco__img' src={heropFour} alt="" />
+              <button className='btn4'>Yangilash <i class="bi1 bi-arrow-clockwise"></i></button>
+            </li>
           </ul>
+          <button className='last__btn'>Barchasini ko’rish</button>
         </div>
       </div>
     </div>
