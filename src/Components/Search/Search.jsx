@@ -1,6 +1,18 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import './Search.scss'
+import { adibData } from '../../lib/data'
+
 function Search() {
+    let arrCategory = []
+    adibData.forEach((item)=>{
+        if(!arrCategory.find((i)=> i == item.from)){
+        arrCategory.push(item.from)
+        }
+
+    })
+    const [active , setActive]=useState(0)
+    // const [from,setFrom ]=useContext('Temuriylar davri ')
+
     return (
         <div className='Search'>
             <div className="container">
@@ -19,6 +31,7 @@ function Search() {
                 </div>
                 
             </div>
+            <div className="container">
             <div className="bottom">
                    <div className="categories__top">
                         <h2>
@@ -26,22 +39,39 @@ function Search() {
                         </h2>
                     </div>
                     <div className="categories__center">
+                        <div className="ul">
+                        {
+                            arrCategory?.map((item,index)=>(
+                                <button onClick={()=>{
+                                    setActive(index)
+                                    // setFrom(item)
+                                }} className={active == index?'actives': 'li'} key={index}>
+                                    {item}
+                                </button>
+                            ))
+                        }
+                        </div>
                         <ul>
-                            <li>
+
+
+
+
+                            {/* <li onClick={()=>setActive(1)} className={active == 1?'actives': 'li'}   >
                                 Temuriylar davri
                             </li>
-                            <li>
+                            <li onClick={()=>setActive(2)} className={active == 2?'actives': 'li'}>
                                 Jadid adabiyoti
                             </li>
-                            <li>
+                            <li onClick={()=>setActive(3)} className={active == 3?'actives': 'li'}>
                                 Sovet davri
                             </li>
-                            <li>
+                            <li onClick={()=>setActive(4)} className={active == 4?'actives': 'li'}>
                                 Mustaqillik davri
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                    </div>
+            </div>
         </div>
     )
 }
