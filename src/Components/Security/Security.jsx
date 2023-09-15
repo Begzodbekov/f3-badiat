@@ -12,12 +12,12 @@ function Security() {
           <div className="part1">
             <span className='email.con'>
               <p className='email'>Email</p>
-              <input type="text" className='Email.sec' />
+              <input type="text" className='email__sec' placeholder='admin@mail.ru' />
               <p className='text__email'>Please enter your first name.</p>
             </span>
             <span className='Pass__con'>
               <p className='pass'>Current password</p>
-              <input type="password" className='Password__sec' />
+              <input type="password" className='Password__sec'  />
               <p className='text__pass'>Please enter your password.</p>
             </span>
           </div>
@@ -33,6 +33,7 @@ function Security() {
               <p className='text__confr__pass'>Please enter your email address.</p>
             </span>
           </div>
+          <hr className='line' />
           <button className='btn__security'>Save Changes</button>
         </div>
       </div>
