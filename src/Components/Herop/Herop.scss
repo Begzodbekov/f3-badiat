@@ -89,6 +89,7 @@
     background-color: #2F2F2F;
     color: #FFFFFF4D;
     font-size: 24px;
+    border-radius: 14px;
     .statistic_item1{
         h2{
             font-size:22px ;
@@ -109,6 +110,7 @@
         height: 50px;
         line-height: 15px;
         margin-top: 31px;
+        position: relative;
         h5{
             font-size: 16px;
             margin-left: 45px;
@@ -124,8 +126,8 @@
         button{
             width: 91px;
             height: 21px;
-            margin-left: 192px;
-            margin-top: -190px;
+            margin-left: -68px;
+            margin-top: -704px;
             font-size: 10px;
             position: absolute;
             top: 732px;
@@ -156,8 +158,8 @@
         .btn2{
                     width: 91px;
                     height: 21px;
-                    margin-left: 192px;
-                    margin-top: -28px;
+                    margin-left: -67px;
+                    margin-top: -704px;
                     font-size: 10px;
                     position: absolute;
                     top: 732px;
@@ -170,8 +172,8 @@
         .btn3{
             width: 91px;
             height: 21px;
-            margin-left: 192px;
-            margin-top: 53px;
+            margin-left: -68px;
+            margin-top: -704px;
             font-size: 10px;
             position: absolute;
             top: 732px;
@@ -184,8 +186,8 @@
         .btn4{
             width: 91px;
             height: 21px;
-            margin-left: 192px;
-            margin-top: -109px;
+            margin-left: -68px;
+            margin-top: -703px;
             font-size: 10px;
             position: absolute;
             top: 732px;
@@ -209,4 +211,109 @@
     font-weight: 400;
     margin-left: 24px;
     border: none;
+}
+
+
+
+.audio__kitob{
+    width: 322px;
+    height: 547px;
+    background-color: #202020;
+    border-radius: 14px;
+}
+.audio__tittle{
+    color: #C9AC8C;
+    padding-top: 15px;
+    padding-left: 28px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.left__img{
+    width: 46.317px;    
+    height: 69.475px;
+    margin-left: 72px;
+    margin-top: 23px;
+    flex-shrink: 0;
+}
+.bet__img{
+    width: 69.03px;
+    height: 103.545px;
+    margin-left: 140px;
+    margin-top: -104px;
+}
+.right__img{
+    width: 46.317px;
+    height: 69.475px;
+    margin-left: 225px;
+    margin-top: -145px;
+}
+.inner__tittle{
+    text-align: center;
+    font-size: 12px;
+    color: #C9AC8C;
+    font-weight: 400;
+    margin-top: -28px;
+    margin-left: 26px;
+}
+.little__tittle{
+    font-size: 8px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    margin-left: 35px;
+}
+.audio__play{
+    width: 258px;
+    height: 28px;
+    margin-left: 37px;
+}
+.audio__track{
+    width: 265px;
+    margin-left: 33px;
+}
+.audio__spof{
+    width: 201px;
+    height: 24px;
+    margin-left: 72px;
+    margin-top: 11px;
+}
+.audio__inner-item{
+    width: 262px;
+    height: 54px;
+    border: 2px solid #C9AC8C;
+    border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+}
+.audio__frame{
+    position: absolute;
+    top: 16px;
+    left: -10px;
+}
+.audio__inner-img{
+    width: 25px;
+    height: 38px;
+    margin-top: 7px;
+    margin-left: 13px;
+    margin-bottom: 8px;
+}
+.track__tittle{
+    font-size: 12px;
+    color: #C9AC8C;
+    margin-top: -44px;
+    margin-left: 50px;
+}
+.track__info{
+    font-size: 8px;
+    color: #FFFFFF99;
+    margin-left: 50px;
+    margin-top: -3px;
+}
+.track__time{
+    font-size: 8px;
+    color: rgba(255, 255, 255, 0.60);
+    font-weight: 400;
+    margin-top: -35px;
+    margin-left: 216px;
 }
