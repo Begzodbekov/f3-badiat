@@ -23,7 +23,6 @@ function Header() {
 
                                     <li onClick={()=>setActive(2)} className={active == 2?'active': null}>
                                         <Link>
-
                                             Kitoblar
                                         </Link>
                                     </li>
