@@ -57,7 +57,7 @@ function Header() {
                                               login
                                         </Link>
                                     </li>
-                                    <li  className={location !='/signin' && '/' && 'signup' ? 'logins': 'login'}>
+                                    <li  className={location != '/'? 'logins': 'login'}>
                                         <Link to={'/signup'}>
                                               register
                                         </Link>

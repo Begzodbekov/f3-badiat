@@ -14,6 +14,7 @@ import Security from './Components/Security/Security';
 import ProfileD from './Components/ProfileD/ProfileD';
 import Settings from './Components/Settings/Settings';
 
+
 function App() {
 
 
@@ -35,7 +36,6 @@ function App() {
         <Route path='/profile' element={<Profile/>}></Route>
         <Route path='/profiled' element={<ProfileD/>}></Route>
         <Route path='/settings' element={<Settings/>}></Route>
-
       </Routes>
 
     </div>
