@@ -11,11 +11,11 @@ import Account from './pages/Account/Account';
 import Booksv from './pages/Booksv/Booksv';
 import Profile from './pages/Profile/Profile';
 import Security from './Components/Security/Security';
-<<<<<<< HEAD
+
 import ProfileD from './Components/ProfileD/ProfileD';
-=======
+
 import Settings from './Components/Settings/Settings';
->>>>>>> d118f4cf534277989c2d7c1eafab6a594a2db90c
+
 
 function App() {
 
@@ -36,12 +36,12 @@ function App() {
         <Route path='/book-view' element={<Booksv />}></Route>
         <Route path='security' element={<Security/>}></Route>
         <Route path='/profile' element={<Profile/>}></Route>
-<<<<<<< HEAD
+
         <Route path='/profiled' element={<ProfileD/>}></Route>
-=======
+
         <Route path='/settings' element={<Settings/>}></Route>
 
->>>>>>> d118f4cf534277989c2d7c1eafab6a594a2db90c
+
       </Routes>
 
     </div>
