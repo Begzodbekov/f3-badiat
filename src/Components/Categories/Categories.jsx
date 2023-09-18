@@ -3,7 +3,7 @@ import { adibData } from '../../lib/data'
 import './Categories.scss'
 import { Link } from 'react-router-dom'
 function Categories() {
-    const [from, setFrom]=useState('Temuriylar davri ')
+    const [from, setFrom]=useContext('Temuriylar davri ')
     return (
         <div className='Categories'>
             <div className="container">

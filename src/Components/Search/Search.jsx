@@ -11,7 +11,7 @@ function Search() {
 
     })
     const [active , setActive]=useState(0)
-    // const [from,setFrom ]=useContext('Temuriylar davri ')
+    const [from,setFrom ]=useContext('Temuriylar davri ')
 
     return (
         <div className='Search'>
@@ -44,7 +44,7 @@ function Search() {
                             arrCategory?.map((item,index)=>(
                                 <button onClick={()=>{
                                     setActive(index)
-                                    // setFrom(item)
+                                    setFrom(item)
                                 }} className={active == index?'actives': 'li'} key={index}>
                                     {item}
                                 </button>
