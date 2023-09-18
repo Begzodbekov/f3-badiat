@@ -21,7 +21,8 @@ function BooksHero() {
                                         <img src={kitoblar.img} alt="" />
                               </div>
                               <div className="bookshero_right">
-                                <img src={Qorqma} alt="" />
+                                {/* <img src={Qorqma} alt="" /> */}
+                                <h1 className='bookshero_right_ismi'>{kitoblar.name}</h1>
                                 <div className='books_ri_item1'>
                                   <h3>Javlon Jovliyev</h3>
                                   <div className='books_ri_span'></div>

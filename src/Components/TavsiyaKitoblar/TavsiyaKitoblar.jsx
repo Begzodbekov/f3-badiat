@@ -20,18 +20,18 @@ function TavsiyaKitoblar() {
                 <div className="tavsiya_bottom">
                   <ul className='tavsiya__botto_list'>
                     <>
-                                {/* <Swiper */}
-                    {/* slidesPerView={4}
+                                <Swiper
+                     slidesPerView={4}
                     spaceBetween={30}
                     centeredSlides={true}
                     // pagination={{
                     //   clickable: true,
                     // }}
                     // modules={[Pagination]}
-                    className="mySwiper"> */}
+                    className="mySwiper">
                     {
                       books?.map((item,index)=>(
-                        // <SwiperSlide>
+                        <SwiperSlide>
 
                         <li key={index}>
                           <img src={item.img} alt="" />
@@ -41,10 +41,10 @@ function TavsiyaKitoblar() {
                             <p>4.1 • 3400 ta fikrlar</p>
                           </div>
                         </li>
-                        // </SwiperSlide>
+                        </SwiperSlide>
                       ))
                     }
-                    {/* </Swiper> */}
+                    </Swiper>
                     </>
                   </ul>
                 </div>
