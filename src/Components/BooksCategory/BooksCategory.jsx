@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { bookData2 } from "../../lib/bookData2";
-import Hero from "../Hero/Hero";
-import Search from "../Search/Search";
 import "./BooksCategory.scss";
 import { books } from "../../lib/bookData";
 // import { bookData3 } from "../../lib/bookData3";
@@ -10,8 +8,7 @@ import { books } from "../../lib/bookData";
 function BooksCategory() {
   return (
     <div>
-      <Hero/>
-      <Search/>
+
       <ul className="book_categories">
         {
         books?.map((item, index) => (

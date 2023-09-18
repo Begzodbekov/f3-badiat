@@ -3,8 +3,9 @@ import Security from '../../Components/Security/Security'
 
 function Profile() {
   return (
-    <div>
+    <div className='Profile'>
         <Security/>
+        {/* <Profile/> */}
     </div>
   )
 }

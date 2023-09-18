@@ -7,6 +7,11 @@ import heropProgress from '../../asests/img/herop-progress.svg'
 import heropSec from '../../asests/img/heropsec.svg'
 import heropThird from '../../asests/img/herop-third.svg'
 import heropFour from '../../asests/img/herop-four.svg'
+import audioFirst from '../../asests/img/audio-first.png'
+import audioPlay from '../../asests/img/audio-play.svg'
+import audioTrack from '../../asests/img/audio-track.svg'
+import audioSpotify from '../../asests/img/audio-spotify.svg'
+import audioFrame from '../../asests/img/audio-frame.png'
 function Herop() {
   return (
     <div className='herop'>
@@ -67,6 +72,45 @@ function Herop() {
             </li>
           </ul>
           <button className='last__btn'>Barchasini ko’rish</button>
+        </div>
+        <div className="audio__kitob">
+            <h3 className='audio__tittle'>Audio kitob</h3>
+            <img className='left__img' src={audioFirst} alt="" />
+            <img className='bet__img' src={audioFirst} alt="" />
+            <img className='right__img' src={audioFirst} alt="" />
+            
+            <div className="audio__inner">
+              <h4 className='inner__tittle'>Dunyoning ishlari 5-track</h4>
+              <h6 className='little__tittle'>O’tkir Hoshimov</h6>
+              <img className='audio__play' src={audioPlay} alt="" />
+              <img className='audio__track' src={audioTrack} alt="" />
+              <img className='audio__spof' src={audioSpotify} alt="" />
+              <div className="audio__inner-item">
+                <img className='audio__frame' src={audioFrame} alt="" />
+                <img className='audio__inner-img' src={audioFirst} alt="" />
+                <h5 className='track__tittle'>Dunyoning ishlari 5-track</h5>
+                <p className='track__info'>O'tkir Hoshimov</p>
+                <p className='track__time'>02:22:18</p>
+              </div>
+              <div className="audio__inner-item1">
+              <img className='audio__inner-img' src={audioFirst} alt="" />
+                <h5 className='track__tittle'>Dunyoning ishlari 4-track</h5>
+                <p className='track__info'>O'tkir Hoshimov</p>
+                <p className='track__time'>02:16:09</p>
+              </div>
+              <div className="audio__inner-item1">
+              <img className='audio__inner-img' src={audioFirst} alt="" />
+                <h5 className='track__tittle'>Dunyoning ishlari 3-track</h5>
+                <p className='track__info'>O'tkir Hoshimov</p>
+                <p className='track__time'>02:09:05</p>
+              </div>
+              <div className="audio__inner-item1">
+              <img className='audio__inner-img' src={audioFirst} alt="" />
+                <h5 className='track__tittle'>Dunyoning ishlari 4-track</h5>
+                <p className='track__info'>O'tkir Hoshimov</p>
+                <p className='track__time'>01:13:23</p>
+              </div>
+            </div>
         </div>
       </div>
     </div>
