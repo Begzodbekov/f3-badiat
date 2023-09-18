@@ -11,6 +11,7 @@ import Account from './pages/Account/Account';
 import Booksv from './pages/Booksv/Booksv';
 import Profile from './pages/Profile/Profile';
 import Security from './Components/Security/Security';
+import ProfileD from './Components/ProfileD/ProfileD';
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/book-view' element={<Booksv />}></Route>
         <Route path='security' element={<Security/>}></Route>
         <Route path='/profile' element={<Profile/>}></Route>
+        <Route path='/profiled' element={<ProfileD/>}></Route>
       </Routes>
 
     </div>
