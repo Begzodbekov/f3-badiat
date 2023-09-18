@@ -17,19 +17,19 @@ function Security() {
             </span>
             <span className='Pass__con'>
               <p className='pass'>Current password</p>
-              <input type="password" className='Password__sec'  />
+              <input type="password" className='Password__sec' placeholder='*********' />
               <p className='text__pass'>Please enter your password.</p>
             </span>
           </div>
           <div className="part2">
             <span className='new__pass'>
               <p className='new__pass'>New password</p>
-              <input type="password" className='New__password__inp' />
+              <input type="password" className='New__password__inp' placeholder='*********' />
               <p className='text__new__pass'>Please enter your phone number.</p>
             </span>
             <span className='confr__pass__cont'>
               <p className='confr__pass'>Confrim password</p>
-              <input type="password" className='confrim__password' />
+              <input type="password" className='confrim__password' placeholder='*********' />
               <p className='text__confr__pass'>Please enter your email address.</p>
             </span>
           </div>
