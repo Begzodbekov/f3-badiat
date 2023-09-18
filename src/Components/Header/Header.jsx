@@ -62,11 +62,11 @@ function Header() {
                                               register
                                         </Link>
                                     </li>
-                                    <li className={location !='/' ? 'odam': 'none'}>
+                                    {/* <li className={location !='/' ? 'odam': 'none'}>
                                         <Link to={'/account'} >
                                               <img src="https://as1.ftcdn.net/v2/jpg/01/26/32/02/1000_F_126320234_AxO4v6wCAh4ZCKfQ9KbNH8YdBIA3XOQY.jpg" alt="" />
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li className={location !='/' ? 'odam': 'none'} >
                                         <Link>
                                               F3-Team
