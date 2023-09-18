@@ -1,0 +1,191 @@
+.container {
+    width: 1200px;
+}
+
+.itemsSettings {
+    width: 709.015px;
+    height: 216px;
+    flex-shrink: 0;
+    margin: auto;
+    margin-top: 116px;
+
+    .settings__title {
+        color: #212121;
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-left: 2px;
+
+    }
+
+    .settings__lan {
+        color: #464E5F;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 32px;
+        margin-bottom: -2px;
+        margin-left: 2px;
+
+    }
+
+    .translate {
+        width: 708px;
+        height: 44px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: #F3F6F9;
+        margin-top: 7px;
+        padding-top: 12px;
+        padding-bottom: 11px;
+        padding-left: 20px;
+        margin-bottom: 3px;
+        //text
+        color: #464E5F;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .text__translate {
+        color: #B5B5C3;
+        font-family: Poppins;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.8;
+        margin-left: 2px;
+    }
+
+    .btn__save {
+        width: 142px;
+        height: 43px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        background: #152540;
+        margin-left: 570px;
+
+        //text
+        color: #FFF;
+        font-family: Poppins;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .line {
+        width: 708px;
+        height: 2px;
+        flex-shrink: 0;
+        background: #ECF0F3;
+        margin-bottom: 32px;
+    }
+
+    .btn__slide {
+        width: 97px;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 40px;
+        box-shadow: 1px 1px 16px ;
+        border: 0px;
+      
+    }
+    :root {
+        --dur: 0.3s;
+        font-size: calc(40px + (80 - 40)*(100vw - 320px)/(2560 - 320));
+    }
+
+    form, .toggle:before, .toggle:after {
+        background: hsl(0,0%,90%);
+    }
+    form, .toggle {
+        position: relative;
+    }
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .curtain, .sr, .toggle:before, .toggle:after {
+        position: absolute;
+    }
+    .curtain, .toggle:before, .toggle:after {
+        transition: transform var(--dur);
+    }
+    .curtain, .toggle:before, .toggle:checked:after  {
+        transition-timing-function: ease-out;
+    }
+    .curtain, .sr {
+        top: 0;
+        left: 0;
+    }
+    .curtain {
+        background: hsl(0,0%,100%);
+        mix-blend-mode: difference;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        transform: scaleX(0);
+        transform-origin: 0 50%;
+    }
+    .sr, .toggle {
+        overflow: hidden;
+    }
+    .sr {
+        clip: rect(1px,1px,1px,1px);
+        color: transparent;
+        width: 1px;
+        height: 1px;
+    }
+    .toggle {
+        background: currentColor;
+        border-radius: 0.75em;
+        cursor: pointer;
+        width: 3em;
+        height: 1.5em;
+        -webkit-appearance: none;
+        appearance: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    .toggle:before, .toggle:after {
+        border-radius: 50%;
+        content: "";
+        display: block;
+        top: 0.25em;
+        left: 0.25em;
+        width: 1em;
+        height: 1em;
+    }
+    .toggle:before, .toggle:checked:after {
+        transition-delay: 0s;
+    }
+    .toggle:checked:before, .toggle:after {
+        transition-delay: calc(var(--dur) * 0.75);
+        transition-timing-function: cubic-bezier(0.3,1.6,0.5,0.7);
+    }
+    .toggle:before {
+        transform: translateX(-1.5em);
+    }
+    .toggle:checked:before {
+        transform: translateX(1.5em);
+    }
+    .toggle:checked:after {
+        transform: translateX(3em);
+    }
+    .toggle:checked ~ .curtain {
+        transform: scaleX(1);
+    }
+    .toggle:focus {
+        outline: transparent;
+    }
+
+}

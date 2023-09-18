@@ -56,21 +56,21 @@ export const adibData = [
                     title2:'Adabiy ijodi 1913-1914-yillarda Andijonning ijtimoiy va madaniy hayoti haqida xabarlar yozish bilan boshlangan. 1914-yil Toshkentda Munavvar Qori Abdurashidxonov va Ubaydulla Xoʻjayev bilan tanishish Choʻlponning milliy uygʻonish harakati namoyandasi sifatida shakllanishida muhim omil boʻlgan. Choʻlpon „Sadoi Turkiston“ gazetasida dastlabki „Turkistonli qardoshlarimizga“ sheʼri, „Qurboni jaholat“, „Doʻxtir Muhammadyor“ hikoyalari va „Adabiyot nadir?“ maqolasini eʼlon qilib (1914), shu davr adabiyoti namoyandalari safidan oʻrin egallagan. Turkiston aholisining iqtisodiy, ijtimoiy va madaniy qoloqlik sharoitida yashayotganining asosiy sababini Rossiyaning mustamlakachilik siyosatida koʻrgan Choʻlpon boshqa jadidlar qatori, oʻz asarlari bilan xalqning madaniy va maʼrifiy saviyasini koʻtarishga kirishgan.',
                     age: "1896-1938",
                     bookCount: '20',
-                    from:'Jadid adabiyoti ',
+                    from:'Sovet davri ',
                     address:"Samarqand, O'zbekiston"   
           },
 
 
 
 
-          {
-                    id:2,
-                    name:"Abdulla Qodirov",
-                    img:"https://asd",
-                    age: "1950 - 2013",
-                    bookCount: '20',
-                    address:"Toshkent, Uzbekistan"
-          },
+          // {
+          //           id:2,
+          //           name:"Abdulla Qodirov",
+          //           img:"https://asd",
+          //           age: "1950 - 2013",
+          //           bookCount: '20',
+          //           address:"Toshkent, Uzbekistan"
+          // },
 
          
             {
