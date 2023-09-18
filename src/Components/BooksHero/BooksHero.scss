@@ -1,0 +1,207 @@
+.BooksHero{
+          background-color: #191919;
+}
+.bookshero_inner{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 1618px;
+                    margin-left: -156px;
+                    padding: 57px 64px 64px 81px;
+                    gap: 55px;
+          .bookshero_left{
+                    img{
+                              width: 765px;
+                              height: 955px;
+                              object-fit: cover;
+                    }
+          }
+          .bookshero_right{
+                    margin-left: 15px;
+                    margin-top:27px;
+                    .bookshero_right_ismi{
+                              color: #C9AC8C;
+                              font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif Stylish FREE;
+                              font-size: 48px;
+                              font-style: normal;
+                              font-weight: 400;
+                              line-height: normal;
+                    }
+                    .books_ri_item1{
+                              display: flex;
+                              justify-content: space-around;
+                              align-items: center;
+                              margin-top: 18px;
+                              width: 230px;
+                              margin-left: -20px;
+                              h3{
+                                        font-size: 16px;
+                                        color: #C9AC8C;
+                              }
+
+                              .books_ri_span{
+                                        width: 2px;
+                                        height: 15px;
+                                        background: white !important;
+                                        display: block;
+                                        position: absolute;
+                                        margin-left: 74px;
+                              }
+                    }
+                    .books_ri_list{
+                              margin-top: 40px;
+                              li{
+                                        color: rgba(255, 255, 255, 0.60);
+                                        font-family: Steinbeck;
+                                        font-size: 20px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        margin-left: -30px;
+                                        margin-top: 20px;
+                                        .book_r_lists{
+                                                  margin-left: 10px;
+                                                  color: white;
+                                        }
+                              }
+                    }
+                    .books_ri_malumot{
+                              display: flex;
+                              justify-content: space-around;
+                              align-items: center;
+                              width: 860px;
+                              margin-left: -4px;
+                              margin-top: 48px;
+                              p{
+                                        color: #C9AC8C;
+                                        margin-top: 12px;
+                              }
+                              .bi_booksh_down{
+                                        color:#fff ;
+                              }
+                              span{
+                                        height: 1.5px;
+                                        width: 700px;
+                                        background-color: rgba(201, 172, 140, 0.60);
+                                        display: block;
+                              }
+                              
+                    }
+                    .books_ri_description{
+                              margin-top: 48px;
+                              .books_ri_descriptioni1{
+                                        color: rgba(255, 255, 255, 0.60);
+                                        font-family: Steinbeck;
+                                        font-size: 20px;
+                                        letter-spacing: 1.3px;
+                                        width: 850px;
+                              }
+                              .books_ri_descriptioni2{
+                                        color: rgba(255, 255, 255, 0.60);
+                                        font-family: Steinbeck;
+                                        font-size: 20px;
+                                        letter-spacing: 1px;
+                                        width: 866px;
+                              }
+                    }
+                    .books_ri_format{
+                              margin-top: 46px;
+                              color: #C9AC8C;
+                              font-family: Steinbeck;
+                              font-size: 20px;
+                              font-style: normal;
+                              font-weight: 400;
+                              line-height: normal;
+                    }
+                    .books_ri_yuklash{
+                              margin-top: 28px;
+                              display: flex;
+                              justify-content: space-around;
+                              align-items: center;
+                              .books_ri_yuklash_item1{
+                                        // flex-grow: 1;
+                                        img{
+                                                  margin-left: 42px;
+                                        }
+                                        h4{
+                                                  color: #FFF;
+                                                  font-family: Steinbeck;
+                                                  font-size: 20px;
+                                                  margin-top: 6px;
+                                        }
+                                        p{
+                                                  margin-top: 8px;
+                                                  color: rgba(255, 255, 255, 0.6);
+                                                  font-family: Steinbeck;
+                                                  font-size: 17px;
+                                                  font-style: normal;
+                                                  font-weight: 400;
+                                                  line-height: normal;
+                                                  letter-spacing: 1px;
+                                                  margin-left: 4px;
+                                        }
+                              }
+                              .books_ri_yuklash_item2{
+                                        margin-left: 26px;
+                                        img{
+                                                  margin-left: 35px;
+                                        }
+                                        h4{
+                                                  color: #FFF;
+                                                  font-family: Steinbeck;
+                                                  font-size: 20px;
+                                                  margin-top: 6px;
+                                        }
+                                        p{
+                                                  margin-top: 8px;
+                                                  color: rgba(255, 255, 255, 0.6);
+                                                  font-family: Steinbeck;
+                                                  font-size: 17px;
+                                                  font-style: normal;
+                                                  font-weight: 400;
+                                                  line-height: normal;
+                                                  letter-spacing: 1px;
+                                                  margin-left: 4px;
+                                        }
+                              }
+                              .books_ri_yuklash_item3{
+                                        margin-left: 26px;
+                                        flex-grow: 1;
+                                        img{
+                                                  margin-left: 24px;
+                                        }
+                                        h4{
+                                                  color: #FFF;
+                                                  font-family: Steinbeck;
+                                                  font-size: 20px;
+                                                  margin-top: 6px;
+
+                                        }
+                                        p{
+                                                  margin-top: 8px;
+                                                  color: rgba(255, 255, 255, 0.6);
+                                                  font-family: Steinbeck;
+                                                  font-size: 17px;
+                                                  font-style: normal;
+                                                  font-weight: 400;
+                                                  line-height: normal;
+                                                  letter-spacing: 1px;
+                                                  margin-left: 4px;
+                                        }
+                              }
+                              button{
+                              }
+                              .books_ri_qoshish{
+                                        background-color: #C9AC8C;
+                                        padding: 16px 32px;
+                                        color: #3C2710;
+                                        font-family: Steinbeck;
+                                        font-size: 16px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: normal;
+                                        border: none;
+                              }
+                    }
+          }
+}

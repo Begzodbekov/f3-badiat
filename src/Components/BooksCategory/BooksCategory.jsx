@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { bookData2 } from "../../lib/bookData2";
 import "./BooksCategory.scss";
 import { books } from "../../lib/bookData";
+// import { bookData3 } from "../../lib/bookData3";
 
 function BooksCategory() {
   return (
@@ -12,7 +13,7 @@ function BooksCategory() {
         {
         books?.map((item, index) => (
           <li key={index} className="book_item">
-            <Link to={`/Home/${item.id}`}>
+            <Link to={`/book-view/${item.id}`}>
               <img className="book_img" src={item.img} alt="img" />
               <br />
               <span>{item.name}</span>
