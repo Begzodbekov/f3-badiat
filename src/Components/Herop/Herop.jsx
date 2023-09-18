@@ -92,6 +92,24 @@ function Herop() {
                 <p className='track__info'>O'tkir Hoshimov</p>
                 <p className='track__time'>02:22:18</p>
               </div>
+              <div className="audio__inner-item1">
+              <img className='audio__inner-img' src={audioFirst} alt="" />
+                <h5 className='track__tittle'>Dunyoning ishlari 4-track</h5>
+                <p className='track__info'>O'tkir Hoshimov</p>
+                <p className='track__time'>02:16:09</p>
+              </div>
+              <div className="audio__inner-item1">
+              <img className='audio__inner-img' src={audioFirst} alt="" />
+                <h5 className='track__tittle'>Dunyoning ishlari 3-track</h5>
+                <p className='track__info'>O'tkir Hoshimov</p>
+                <p className='track__time'>02:09:05</p>
+              </div>
+              <div className="audio__inner-item1">
+              <img className='audio__inner-img' src={audioFirst} alt="" />
+                <h5 className='track__tittle'>Dunyoning ishlari 4-track</h5>
+                <p className='track__info'>O'tkir Hoshimov</p>
+                <p className='track__time'>01:13:23</p>
+              </div>
             </div>
         </div>
       </div>
