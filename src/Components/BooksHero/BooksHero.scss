@@ -13,11 +13,12 @@
                     img{
                               width: 765px;
                               height: 955px;
+                              object-fit: cover;
                     }
           }
           .bookshero_right{
                     margin-left: 15px;
-                    margin-top: -9px;
+                    margin-top:27px;
                     .books_ri_item1{
                               display: flex;
                               justify-content: space-around;

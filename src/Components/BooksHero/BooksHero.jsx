@@ -2,23 +2,23 @@ import React, { useState } from 'react'
 import './BooksHero.scss'
 import Hozircha from '../../asests/img/AuthorImg1.png'
 import { useParams } from 'react-router-dom'
-import { adibData } from '../../lib/data'
+// import { adibData } from '../../lib/data'
 import Qorqma from '../../asests/img/Qo’rqma.png'
 import Rate from '../../asests/img/books_rate.png'
 import Kitob from '../../asests/img/books-kitob.png'
 import Audio from '../../asests/img/books_audio.png'
 import Elektron from '../../asests/img/books_elektron.png'
+import { books } from '../../lib/bookData'
 function BooksHero() {
   const {slug} = useParams()
-  // const [booksv]
-  const [author, setAuthor] = useState(adibData.find((item)=> item.id == slug))
+  const [kitoblar, setKitoblar] = useState(books.find((item)=> item.id == slug))
 
   return (
     <div className='BooksHero'>
           <div className="container">
                     <div className="bookshero_inner">
                               <div className="bookshero_left">
-                                        <img src={Hozircha} alt="" />
+                                        <img src={kitoblar.img} alt="" />
                               </div>
                               <div className="bookshero_right">
                                 <img src={Qorqma} alt="" />
@@ -28,10 +28,10 @@ function BooksHero() {
                                  <img src={Rate} alt="" />
                                 </div>
                                 <ul className='books_ri_list'>
-                                  <li>Sahifalar soni: <span className='book_r_lists'>376</span></li>
+                                  <li>Sahifalar soni: <span className='book_r_lists'>{kitoblar.pages}</span></li>
                                   <li>Chop etilgan: <span className='book_r_lists'>2021</span> </li>
-                                  <li>Janri: <span className='book_r_lists'>Tarixiy</span> </li>
-                                  <li>Nashriyot <span className='book_r_lists'>Nihol nashr</span> </li>
+                                  <li>Janri: <span className='book_r_lists'>{kitoblar.category}</span> </li>
+                                  <li>Nashriyot <span className='book_r_lists'>{kitoblar.nashiryot}</span> </li>
                                 </ul>
                                 <div className='books_ri_malumot'>
                                   <p>To’liq ma’lumot</p>
@@ -47,7 +47,7 @@ function BooksHero() {
                                   <div className='books_ri_yuklash_item1'>
                                     <img src={Kitob} alt="" />
                                     <h4>Qog’oz kitob</h4>
-                                    <p>27 000 so’m</p>
+                                    <p>{kitoblar.priceQ} so’m</p>
                                   </div>
                                   <div className='books_ri_yuklash_item2'>
                                     <img src={Audio} alt="" />

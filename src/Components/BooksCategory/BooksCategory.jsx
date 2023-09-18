@@ -13,7 +13,7 @@ function BooksCategory() {
         {
         books?.map((item, index) => (
           <li key={index} className="book_item">
-            <Link to={`/Home/${item.id}`}>
+            <Link to={`/book-view/${item.id}`}>
               <img className="book_img" src={item.img} alt="img" />
               <br />
               <span>{item.name}</span>
