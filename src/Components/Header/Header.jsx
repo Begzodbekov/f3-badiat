@@ -63,7 +63,7 @@ function Header() {
                                     </li>
                                     <li className={location !='/' ? 'odam': 'none'} >
                                         <Link>
-                                              Sarvar
+                                              F3-Team
                                         </Link>
                                     </li>
                                  </ul>
