@@ -2,8 +2,10 @@ import React, { useContext, useState } from 'react'
 import { adibData } from '../../lib/data'
 import './Categories.scss'
 import { Link } from 'react-router-dom'
-function Categories() {
-    const [from, setFrom]=useState('Temuriylar davri ')
+import { Context } from '../../Context/Context'
+function Categories({  }) {
+    const {from} =useContext(Context)
+    console.log(from);
     return (
         <div className='Categories'>
             <div className="container">

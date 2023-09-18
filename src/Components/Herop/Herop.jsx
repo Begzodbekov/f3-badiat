@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Herop.scss'
 import farruxImg from '../../asests/img/farrux-img.png'
 import bgiHerop from '../../asests/img/bgi-herop.png'
@@ -12,7 +12,17 @@ import audioPlay from '../../asests/img/audio-play.svg'
 import audioTrack from '../../asests/img/audio-track.svg'
 import audioSpotify from '../../asests/img/audio-spotify.svg'
 import audioFrame from '../../asests/img/audio-frame.png'
+import { useParams } from 'react-router-dom'
+// import { adibData } from '../../lib/data'
+import { bookData2 } from '../../lib/bookData2'
+import acstarImg from '../../asests/img/acstar-img.png'
+
+
 function Herop() {
+  const { slug } = useParams
+  console.log();
+
+  const [Herop,setHerop] = useState(bookData2.find((item) => item.id == slug))
   return (
     <div className='herop'>
       <div className="container">
@@ -36,7 +46,11 @@ function Herop() {
             <img className='second__img' src={bgiHerop} alt="" />
           </div>
         </div>
-        <div className="statistic">
+
+        <div className='account_father'>
+          
+          <div className="account_little_father">
+          <div className="statistic">
           <div className='statistic_item1'>
               <h2>Hozir o’qilmoqda...</h2>
               <i class="bi bi-grid-fill bi_ph"></i>
@@ -111,6 +125,25 @@ function Herop() {
                 <p className='track__time'>01:13:23</p>
               </div>
             </div>
+        </div>
+          </div>
+          <div className="account_data_father">
+            <ul className='account__list'>
+              {
+                bookData2?.map((item, index) => (
+                  <li key={index}>
+                    <img className='account_father_item' src={item.img} alt="" />
+                    <h1 className='account_father_item1'>{item.name}</h1>
+                    <h6>O’tkir Hoshimov</h6>
+                    <div className='account_fakt'>
+                      <img className='star__img' src={acstarImg} alt="" />
+                      <p className='fact__p'>4.1 • 3400 ta fikrlar</p>
+                    </div>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
         </div>
       </div>
     </div>
