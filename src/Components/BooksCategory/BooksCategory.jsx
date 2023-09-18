@@ -5,7 +5,7 @@ import Hero from "../Hero/Hero";
 import Search from "../Search/Search";
 import "./BooksCategory.scss";
 import { books } from "../../lib/bookData";
-import { bookData3 } from "../../lib/bookData3";
+// import { bookData3 } from "../../lib/bookData3";
 
 function BooksCategory() {
   return (
@@ -13,7 +13,8 @@ function BooksCategory() {
       <Hero/>
       <Search/>
       <ul className="book_categories">
-        {bookData2?.map((item, index) => (
+        {
+        books?.map((item, index) => (
           <li key={index} className="book_item">
             <Link to={`/Home/${item.id}`}>
               <img className="book_img" src={item.img} alt="img" />
