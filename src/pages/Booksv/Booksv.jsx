@@ -1,7 +1,9 @@
 import React from 'react'
+import './Booksv.scss'
 import BooksHero from '../../Components/BooksHero/BooksHero'
 import BooksContent from '../../Components/BooksContent/BooksContent'
-import { useParams } from 'react-router-dom'
+
+import TavsiyaKitoblar from '../../Components/TavsiyaKitoblar/TavsiyaKitoblar'
 
 function Booksv() {
 
@@ -9,6 +11,7 @@ function Booksv() {
     <div className='Booksv'>
           <BooksHero/>
           <BooksContent/>
+          <TavsiyaKitoblar/>
     </div>
   )
 }

@@ -1,0 +1,99 @@
+.tavsiya_inner{
+    margin-top: 53px;
+    .tavsiya_top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1740px;
+        margin-left: -290px;
+        .tavsiya_h1{
+            color: #C9AC8C;
+            font-family: Steinbeck;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .tavsiya_link{
+            color: #FFF;
+            font-family: Steinbeck;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration: none;
+        }
+    }
+    .tavsiya_bottom{
+        overflow: hidden;
+        width: 1860px;
+        margin-left: -321px;
+        margin-top: 66px;
+        padding-bottom: 168px;
+        .tavsiya__botto_list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 41px;
+            li{
+                img{
+                    width: 214.152px;
+                    height: 276.228px;
+                    object-fit: cover;
+                }
+                h2{
+                    color: #C9AC8C;
+                    font-family: Rotterburg Stylish FREE;
+                    font-size: 23px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-top: 14px;
+                }
+                .tavsiya_list_itemb{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 130px;
+                    margin-top: 2px;
+
+                    img{
+                        margin-top: -19px;
+                        width: 12px;
+                        height: 12px;
+                    }
+                    p{
+                        color: rgba(255, 255, 255, 0.60);
+                        font-family: Visuelt Pro;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 144.4%;
+                    }
+                }
+            }
+        }
+        // .swiper {
+        //     width: 100%;
+        //     height: 100%;
+        //   }
+          
+        // //   .swiper-slide {
+        // //     text-align: center;
+        // //     font-size: 18px;
+        // //     background: #fff;
+          
+        // //     /* Center slide text vertically */
+        // //     display: flex;
+        // //     justify-content: center;
+        // //     align-items: center;
+        // //   }
+          
+        //   .swiper-slide img {
+        //     display: block;
+        //     width: 100%;
+        //     height: 100%;
+        //     object-fit: cover;
+        //   }
+    }
+}
