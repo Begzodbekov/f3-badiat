@@ -11,6 +11,7 @@ import Account from './pages/Account/Account';
 import Booksv from './pages/Booksv/Booksv';
 import Profile from './pages/Profile/Profile';
 import Security from './Components/Security/Security';
+import Settings from './Components/Settings/Settings';
 
 function App() {
 
@@ -31,6 +32,8 @@ function App() {
         <Route path='/book-view/:slug' element={<Booksv />}></Route>
         <Route path='security' element={<Security/>}></Route>
         <Route path='/profile' element={<Profile/>}></Route>
+        <Route path='/settings' element={<Settings/>}></Route>
+
       </Routes>
 
     </div>
