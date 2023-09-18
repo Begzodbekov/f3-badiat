@@ -1,6 +1,8 @@
 import React, { useContext, useState } from 'react'
 import './Search.scss'
 import { adibData } from '../../lib/data'
+import { Context } from '../../Context/Context'
+import Categories from '../Categories/Categories'
 
 function Search() {
     let arrCategory = []
@@ -11,8 +13,8 @@ function Search() {
 
     })
     const [active , setActive]=useState(0)
-    const [from,setFrom ]=useContext('Temuriylar davri ')
-
+    const {from,setFrom}= useContext(Context)
+    console.log(arrCategory);
     return (
         <div className='Search'>
             <div className="container">
@@ -51,24 +53,6 @@ function Search() {
                             ))
                         }
                         </div>
-                        <ul>
-
-
-
-
-                            {/* <li onClick={()=>setActive(1)} className={active == 1?'actives': 'li'}   >
-                                Temuriylar davri
-                            </li>
-                            <li onClick={()=>setActive(2)} className={active == 2?'actives': 'li'}>
-                                Jadid adabiyoti
-                            </li>
-                            <li onClick={()=>setActive(3)} className={active == 3?'actives': 'li'}>
-                                Sovet davri
-                            </li>
-                            <li onClick={()=>setActive(4)} className={active == 4?'actives': 'li'}>
-                                Mustaqillik davri
-                            </li> */}
-                        </ul>
                     </div>
                    </div>
             </div>
