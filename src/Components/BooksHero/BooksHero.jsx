@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './BooksHero.scss'
 import Hozircha from '../../asests/img/AuthorImg1.png'
 import { useParams } from 'react-router-dom'
@@ -12,8 +12,11 @@ import Naqsh from '../../asests/img/booksv_naqsh1.png'
 import { books } from '../../lib/bookData'
 function BooksHero() {
   const {slug} = useParams()
+  
   const [kitoblar, setKitoblar] = useState(books.find((item)=> item.id == slug))
-
+  useEffect(()=>{
+    setKitoblar(books.find((item)=> item.id == slug))
+  },[slug])
   return (
     <div className='BooksHero'>
           <div className="container">
