@@ -11,7 +11,6 @@ import Account from './pages/Account/Account';
 import Booksv from './pages/Booksv/Booksv';
 import Profile from './pages/Profile/Profile';
 import Security from './Components/Security/Security';
-import ProfileD from './Components/ProfileD/ProfileD';
 import Settings from './Components/Settings/Settings';
 
 
