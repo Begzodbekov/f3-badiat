@@ -26,7 +26,7 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/nasr' element ={<Nasr/>}></Route>
         <Route path='/books' element ={<Books/>}></Route>
-        <Route path='/' element={<Home />} />
+        {/* <Route path='/' element={<Home />} /> */}
         <Route path='/nasr' element={<Nasr />}></Route>
         <Route path='/author/:slug' element={<Author />}></Route>
         <Route path='/signup' element={<Signup />}></Route>
@@ -34,7 +34,6 @@ function App() {
         <Route path='/book-view/:slug' element={<Booksv />}></Route>
         <Route path='security' element={<Security/>}></Route>
         <Route path='/profile' element={<Profile/>}></Route>
-        <Route path='/profiled' element={<ProfileD/>}></Route>
         <Route path='/settings' element={<Settings/>}></Route>
       </Routes>
 

@@ -6,18 +6,22 @@
                     justify-content: space-around;
                     align-items: center;
                     width: 1618px;
-                    margin-left: -156px;
+                    margin-left: -216px;
                     padding: 57px 64px 64px 81px;
                     gap: 55px;
+                    margin-bottom: -425.8px;
           .bookshero_left{
+            margin-top: -353px;
+            margin-left: 99px;
                     img{
-                              width: 765px;
+                              width: 751px;
                               height: 955px;
                               object-fit: cover;
+                              border-radius: 15px;
                     }
           }
           .bookshero_right{
-                    margin-left: 15px;
+                    margin-left: 30px;
                     margin-top:27px;
                     .bookshero_right_ismi{
                               color: #C9AC8C;
@@ -189,8 +193,6 @@
                                                   margin-left: 4px;
                                         }
                               }
-                              button{
-                              }
                               .books_ri_qoshish{
                                         background-color: #C9AC8C;
                                         padding: 16px 32px;
@@ -201,7 +203,12 @@
                                         font-weight: 400;
                                         line-height: normal;
                                         border: none;
+                                        margin-right: 96px;
                               }
+                    }
+                    .bookshero_naqsh{
+                        margin-top: -802px;
+                        margin-left: 246px;
                     }
           }
 }

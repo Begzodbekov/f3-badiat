@@ -6,8 +6,10 @@ import logo from '../../asests/img/logo.svg'
 function Header() {
   const [active , setActive]= useState(0)
   const location = useLocation().pathname
+  const [list, setList] = useState(0)
+  console.log(list);
   return (
-    <div className={location =='/login'?'Headers' :'Header'}>
+    <div className={location ==='/signin' || location ==='/signup' || location ==='/account' ? 'Headers' :'Header'}>
         <div className="container">
                     <div className="header_inner">
                               <nav className='nav'>
@@ -62,15 +64,26 @@ function Header() {
                                               register
                                         </Link>
                                     </li>
-                                    {/* <li className={location !='/' ? 'odam': 'none'}>
-                                        <Link to={'/account'} >
+                                    <li className={location !='/' ? 'odam': 'none'}>
+                                        <Link to={'/profile'} >
                                               <img src="https://as1.ftcdn.net/v2/jpg/01/26/32/02/1000_F_126320234_AxO4v6wCAh4ZCKfQ9KbNH8YdBIA3XOQY.jpg" alt="" />
                                         </Link>
-                                    </li> */}
+                                    </li>
                                     <li className={location !='/' ? 'odam': 'none'} >
-                                        <Link>
-                                              F3-Team
-                                        </Link>
+                                        <div className='odam_list_test'>
+                                           <div className='odam_list_testitem1'>
+                                            <Link to={'/profile'}>Profile</Link> 
+                                             <i onClick={()=>setList(1)} class="bi bi-chevron-down odam_list_testarrow"></i>
+                                           </div>
+                                            <div className={list ==1? 'odam_list_testitem2' :'odam_list_test1item2'}>
+                                                <Link to={'/account'}>Account</Link>
+                                            </div>
+                                        </div>
+                                        {/* <select className='header_selection' name="select" id="">
+                                           
+                                             <option value="1"> <Link to={'/profile'}   >Profile </Link></option>
+                                              <option value="2"> <Link> Account</Link></option>
+                                        </select> */}
                                     </li>
                                  </ul>
                             </nav>

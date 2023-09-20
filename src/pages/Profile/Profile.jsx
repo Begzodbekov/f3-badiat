@@ -1,19 +1,15 @@
 import React from 'react'
 import './profile.scss'
-import Security from '../../Components/Security/Security'
-import ProfileD from '../../Components/ProfileD/ProfileD'
 
-import Settings from '../../Components/Settings/Settings'
+import Herop from '../../Components/Herop/Herop'
 
 
 function Profile() {
   return (
     <div className='Profile'>
-        <Security/>
+          <Herop/>
 
-        <ProfileD/>
-        {/* <Profile/> */}
-        <Settings/>
+
 
     </div>
   )

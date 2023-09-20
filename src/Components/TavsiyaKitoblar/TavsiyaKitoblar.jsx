@@ -33,7 +33,7 @@ function TavsiyaKitoblar() {
                       books?.map((item,index)=>(
                         <SwiperSlide>
 
-                        <li key={index}>
+                        <li className='tavsiya_bottom_karta' key={index}>
                           <img src={item.img} alt="" />
                           <h2>{item.name}</h2>
                           <div className='tavsiya_list_itemb'>
