@@ -8,14 +8,14 @@ function Header() {
   const [list, setList] = useState(0)
   console.log(list);
   return (
-    <div className={location ==='/signin' || location ==='/signup' || location ==='/account' ? 'Headers' :'Header'}>
+    <div className={location ==='/signin' || location ==='/signup' || location ==='/account' || location ==='/security' ? 'Headers' :'Header'}>
         <div className="container">
                     <div className="header_inner">
                               <nav className='nav'>
                                  <div className="logo">
                                     <Link><img src={logo} alt="img" /></Link>
                                  </div>
-                                 <ul>
+                                 <ul className='nav__list'>
                                     <li  className={location == '/'?'active': null}>
                                         <Link to={'/'}>
                                             Bosh sahifa
@@ -28,37 +28,33 @@ function Header() {
                                             Kitoblar
                                         </Link>
                                     </li>
-                                    <li  className={location == 3?'active': null} >
+                                    <li  className={location =='/nasr' ?'active': null} >
                                         <Link to={'/nasr'}>  
                                             Nasr
                                         </Link>
                                     </li>
-                                    <li  className={location == 4?'active': null}>
+                                    <li  className={location == '/nazm'?'active': null}>
                                         <Link>
                                             Nazm   
                                         </Link>
                                     </li>
-                                    <li  className={location == 5?'active': null}>
+                                    <li  className={location == '/maqolalar'?'active': null}>
                                         <Link>
                                             Maqolalar
                                         </Link>
                                     </li>
-                                    <li  className={location == 6?'active': null}>
+                                    <li  className={location == '/forum'? 'active': null}>
                                         <Link>
                                             Forum
                                         </Link>
                                     </li>
-                                    <li className={location !='/' ? 'logins': 'login'}>
+                                    <li className={location !='/' ? 'logins li8': 'login li8'}>
                                         <Link to='/signin'>
                                               login
                                         </Link>
                                     </li>
-                                    <li  className={location !='/signin' && '/' && 'signup' ? 'logins': 'login'}>
-                                        <Link to={'/signin'}>
-                                              login
-                                        </Link>
-                                    </li>
-                                    <li  className={location != '/'? 'logins': 'login'}>
+                                   
+                                    <li  className={location != '/'? 'logins li8': 'login li8'}>
                                         <Link to={'/signup'}>
                                               register
                                         </Link>

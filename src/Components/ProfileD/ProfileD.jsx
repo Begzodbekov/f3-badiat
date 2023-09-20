@@ -25,12 +25,13 @@ function ProfileD() {
             {/* <Link> */}
               {/* <img  src={profiledCamera} alt="img" /> */}
             {/* </Link> */}
-            <input type="file" name='file' onChange={handleFile} />
+            <input className='profiled__inp-file' type="file"  name='file' onChange={handleFile} 
+             />
           </span>
         </div>
         <div className="profiled__right">
           <div className="profiled__part1">
-            <h1>My profile</h1>
+            <h1>My profile</h1> 
             <h4>First Name</h4>
             <input type="text" placeholder='John' />
             <p>Please enter your first name.</p>
