@@ -13,6 +13,7 @@ import Profile from './pages/Profile/Profile';
 import Security from './Components/Security/Security';
 import Settings from './Components/Settings/Settings';
 
+
 function App() {
 
 
@@ -24,16 +25,15 @@ function App() {
         <Route path='/' element={<Home/>} />
         <Route path='/nasr' element ={<Nasr/>}></Route>
         <Route path='/books' element ={<Books/>}></Route>
-        <Route path='/' element={<Home />} />
+        {/* <Route path='/' element={<Home />} /> */}
         <Route path='/nasr' element={<Nasr />}></Route>
         <Route path='/author/:slug' element={<Author />}></Route>
         <Route path='/signup' element={<Signup />}></Route>
         <Route path='/signin' element={<Signin />}></Route>
-        <Route path='/book-view' element={<Booksv />}></Route>
+        <Route path='/book-view/:slug' element={<Booksv />}></Route>
         <Route path='security' element={<Security/>}></Route>
         <Route path='/profile' element={<Profile/>}></Route>
         <Route path='/settings' element={<Settings/>}></Route>
-
       </Routes>
 
     </div>

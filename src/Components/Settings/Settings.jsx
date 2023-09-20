@@ -1,9 +1,11 @@
 import React from 'react'
 import './Settings.scss'
+import AccountHeader from '../AccountHeader/AccountHeader'
 function Settings() {
   return (
     <div className='Settings'>
         <div className="container">
+          <AccountHeader/>
             <div className="itemsSettings">
                 <h1 className='settings__title'>Settings</h1>
                 <p className='settings__lan'>Language</p>

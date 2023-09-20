@@ -1,6 +1,8 @@
 .Header{
     background: #191919;
-
+    margin-left: -81px;
+    padding-top: 22px;
+    border-bottom: 0.2px solid rgba(255, 255, 255, 0.1);
 }
 .Headers{
     display: none;
@@ -53,7 +55,43 @@ margin-left: -200px;
         }
         .odam{
             display: block;
+            img{
+                width: 50px;
+                border-radius: 50px;
+                margin-left: 2px;
+                margin-top: -12px;
+                position: absolute;
+            }
         }
+        .odam_list_test{
+            .odam_list_testitem1{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 75px;
+                color: rgba(255, 255, 255, 1);
+                .odam_list_testarrow{
+                    margin-top: -4px;
+                }
+            }
+            .odam_list_testitem2{
+                color: rgba(255, 255, 255, 1);
+                h6{
+                    margin-left: -12px;
+                }
+            }
+            .odam_list_test1item2{
+                display: none;
+            }
+        }
+        // .header_selection{
+        //     background-color: transparent;
+        //     color: rgba(255, 255, 255, 1);
+        //     border: none;
+        //     option{
+        //         background-color: #191919;
+        //     }
+        // }
     }
 }
 }

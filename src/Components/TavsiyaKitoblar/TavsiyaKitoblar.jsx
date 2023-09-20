@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './TavsiyaKitoblar.scss'
 import { books } from '../../lib/bookData'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import Tstar from '../../asests/img/tavsiya_star.png'
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -9,6 +9,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Pagination } from 'swiper/modules';
 function TavsiyaKitoblar() {
+  const navigate = useNavigate()
+ 
+  const [id, setId] =useState(0)
+  function addBookId (id){
+    navigate(`/book-view/${id}`)
+  }
+ 
   return (
     <div className='TavsiyaKitoblar'>
         <div className="container">
@@ -20,20 +27,21 @@ function TavsiyaKitoblar() {
                 <div className="tavsiya_bottom">
                   <ul className='tavsiya__botto_list'>
                     <>
-                                {/* <Swiper */}
-                    {/* slidesPerView={4}
+                                <Swiper
+                     slidesPerView={4}
                     spaceBetween={30}
                     centeredSlides={true}
                     // pagination={{
                     //   clickable: true,
                     // }}
                     // modules={[Pagination]}
-                    className="mySwiper"> */}
+                    className="mySwiper">
                     {
                       books?.map((item,index)=>(
-                        // <SwiperSlide>
+                        <SwiperSlide>
 
-                        <li key={index}>
+
+                        <li onClick={()=> addBookId(item.id)} className='tavsiya_bottom_karta' key={index}>
                           <img src={item.img} alt="" />
                           <h2>{item.name}</h2>
                           <div className='tavsiya_list_itemb'>
@@ -41,10 +49,10 @@ function TavsiyaKitoblar() {
                             <p>4.1 • 3400 ta fikrlar</p>
                           </div>
                         </li>
-                        // </SwiperSlide>
+                        </SwiperSlide>
                       ))
                     }
-                    {/* </Swiper> */}
+                    </Swiper>
                     </>
                   </ul>
                 </div>

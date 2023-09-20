@@ -39,8 +39,8 @@ function AuthorD() {
               <h1 className='part1__text1'>{author.name}v</h1>
               <p className='part1__text2'>{author.title1}</p>
             </div>
-            <i class="bi bi-bookmark mark"> Ijodi</i>
-            <div className="part2">
+            <div className="author_part2">
+              <i class="bi bi-bookmark mark"> Ijodi</i>
               <p className='mark__text1'>{author.title2}</p>
             </div>
             <div className="part3">
@@ -52,16 +52,32 @@ function AuthorD() {
               <br />
 
                 <Link className='books__con' to='/books'>
-
+                  
                 <ul className='books__con2'>
+                <>
+                                <Swiper
+                     slidesPerView={4}
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    // pagination={{
+                    //   clickable: true,
+                    // }}
+                    // modules={[Pagination]}
+                    className="mySwiper">
                   {
                     books.filter((item) => item.adibId == slug).map((item) => (
+                      <SwiperSlide>
+
                       <li className='books'>
                         <img className='books__img' width={164} src={item.img} alt="" />
                         <b className='books__title'>{item.name}</b>
                       </li>
+                      </SwiperSlide>
+
                     ))
                   }
+                       </Swiper>
+                    </>
                 </ul>
 
             </Link>

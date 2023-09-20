@@ -1,6 +1,4 @@
-.container {
-    width: 1440px;
-}
+
 
 .AuthorD {
     background-color: #191919;
@@ -66,10 +64,13 @@
 }
 
 .img1 {
-    width: 582px;
-    height: 779.327px;
-    margin-top: 79px;
+    height: 858.327px;
     margin-bottom: 42px;
+    margin-top: -1px;
+    width: 745px;
+    margin-left: -303px;
+    object-fit: cover;
+    border-radius: 0px 50px 50px 0px;
 }
 
 .left__row1 {
@@ -131,10 +132,13 @@
     font-weight: 400;
     line-height: 144.4%;
     margin-bottom: 200px;
+    margin-top: 20px;
+    width: 800px;
 }
 
 .container__right {
     margin-top: 60px;
+    margin-left: -106px;
 }
 
 .part1 {
@@ -157,15 +161,13 @@
 
 .mark__text1 {
     color: #FFF;
-    font-family: Steinbeck;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 154.9%;
-    width: 332px;
+    width: 817px;
     height: 58px;
     flex-shrink: 0;
+    font-size: 15px;
     margin-left: 31px;
+    letter-spacing: 1px;
+    line-height: 1.6;
 }
 
 .part3__text1 {
@@ -206,18 +208,22 @@
 
     .books__img {
         margin-bottom: 17px;
+        width: 164.152px;
+        height: 246.228px;
+        object-fit: cover;
     }
 }
 
-.part2 {
-    margin-top: 8px;
+
+.author_part2 {
+    margin-top: 31px;
 }
 
 
 .head__part3 {
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 43px;
 }
 
 .see__all {

@@ -4,12 +4,12 @@ export const books = [
               adibId:1,
               name: "Qo'shiqlarim sizga",
               img: "https://assets.asaxiy.uz/product/items/desktop/b7ee0d0d4d5ef995aae0fc691e6d840d2022042615273751372APKwbYVRkK.jpg.webp",
-              priceQ: "20000",
+              priceQ: "20 000",
               priceA: "15000",
               priceE: "10000",
               count: 1500,
               pages:128,
-              category: "Tarixi",
+              category: "Tarixiy",
               nashiryot: "Hilol Nashiryoti"
     },
     {
@@ -22,7 +22,7 @@ export const books = [
               priceE: "10000",
               count: 1500,
               pages:300,
-              category: "Tarixi",
+              category: "Tarixiy",
               nashiryot: "Hilol Nashiryoti"
     },
     {

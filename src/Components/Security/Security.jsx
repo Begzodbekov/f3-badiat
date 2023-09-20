@@ -1,9 +1,11 @@
 import React from 'react'
 import './Security.scss'
+import AccountHeader from '../AccountHeader/AccountHeader'
 function Security() {
   return (
     <div className='Security'>
       <div className="container">
+        <AccountHeader/>
         <div className="content">
           <h3 className='Sec__title'>
             Change Or Recover Your Password:

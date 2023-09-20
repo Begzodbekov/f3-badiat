@@ -1,11 +1,15 @@
 import React from 'react'
-import Herop from '../../Components/Herop/Herop'
 import './Account.scss'
+import ProfileD from '../../Components/ProfileD/ProfileD'
 
+// import Security from '../../Components/Security/Security'
+// import Settings from '../../Components/Settings/Settings'
 function Account() {
   return (
     <div className='Account'>
-          <Herop/>
+              {/* <Security/> */}
+          <ProfileD/>
+          {/* <Settings/> */}
     </div>
   )
 }
