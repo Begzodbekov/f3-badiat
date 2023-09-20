@@ -14,7 +14,7 @@ function BooksContent() {
           <div className="tag_link">Kitobxonlar taqrizi</div>
         </div>
 
-        {/* <div className="comment_tag">
+        <div className="comment_tag">
           <div className="comment_box">
             <img src={tag} alt="" className="tag_img" />
             <p className="comment">
@@ -43,7 +43,7 @@ function BooksContent() {
               <img src={send} alt="" className="send" />
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </div>
   );
