@@ -129,7 +129,7 @@ function Herop() {
           </div>
           <div className="account_data_father">
             <ul className='account__list'>
-              {
+              {/* {
                 bookData2?.map((item, index) => (
                   <li key={index}>
                     <img className='account_father_item' src={item.img} alt="" />
@@ -141,7 +141,7 @@ function Herop() {
                     </div>
                   </li>
                 ))
-              }
+              } */}
             </ul>
           </div>
         </div>

@@ -1,3 +1,7 @@
+.herop{
+    background-color: #191919;
+    margin-left: -100px;
+}
 .herop__inner{
     width: 1630px;
     height: 322px;
@@ -325,6 +329,13 @@
     margin-left: 40px;
     margin-top: 3px;   
     background-color: rgba(255, 255, 255, 0.05);
+}
+.account_data_father{
+    margin-left: -20px;
+   ul{
+    padding-right: 100px;
+    gap: 20px;
+   }
 }
 
 .account_father{
