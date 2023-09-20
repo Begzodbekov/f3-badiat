@@ -130,6 +130,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 144.4%;
+    margin-bottom: 200px;
 }
 
 .container__right {
@@ -151,6 +152,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
 }
 
 .mark__text1 {
@@ -179,6 +181,8 @@
 .books {
     width: 165px;
     height: 402px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .books__con {
@@ -197,6 +201,7 @@
         font-weight: 400;
         line-height: normal;
         margin-top: 17px;
+        text-decoration: none;
     }
 
     .books__img {
@@ -205,8 +210,9 @@
 }
 
 .part2 {
-    margin-top: 100px;
+    margin-top: 8px;
 }
+
 
 .head__part3 {
     display: flex;
@@ -217,7 +223,7 @@
 .see__all {
     height: 0px;
     margin-top: 211px;
-    margin-left: 330px;
+    margin-left: 290px;
     color: #FFF;
     text-align: center;
     font-family: Steinbeck;
@@ -225,4 +231,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
+}
+
+.books__con2{
+    display: flex;
+    flex-direction: row;
 }

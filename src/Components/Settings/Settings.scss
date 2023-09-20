@@ -98,11 +98,15 @@
         border: 0px;
       
     }
+
     :root {
         --dur: 0.3s;
         font-size: calc(40px + (80 - 40)*(100vw - 320px)/(2560 - 320));
     }
-
+    body, input {
+        color: hsl(0,0%,10%);
+        font: 1em/1.5 sans-serif;
+    }
     form, .toggle:before, .toggle:after {
         background: hsl(0,0%,90%);
     }
