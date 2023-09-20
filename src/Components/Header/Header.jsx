@@ -4,7 +4,6 @@ import { Link, useLocation } from 'react-router-dom'
 import logo from '../../asests/img/logo.svg'
 
 function Header() {
-  const [active , setActive]= useState(0)
   const location = useLocation().pathname
   return (
     <div className={location =='/login'?'Headers' :'Header'}>
@@ -15,34 +14,34 @@ function Header() {
                                     <Link><img src={logo} alt="img" /></Link>
                                  </div>
                                  <ul>
-                                    <li onClick={()=>setActive(1)} className={active == 1?'active': null}>
+                                    <li  className={location == '/'?'active': null}>
                                         <Link to={'/'}>
                                             Bosh sahifa
                                         </Link>
                                     </li>
 
-                                    <li onClick={()=>setActive(2)} className={active == 2?'active': null}>
+                                    <li  className={location == "/books"?'active': null}>
                                         <Link to='/books'>
 
                                             Kitoblar
                                         </Link>
                                     </li>
-                                    <li onClick={()=>setActive(3)} className={active == 3?'active': null} >
+                                    <li  className={location == 3?'active': null} >
                                         <Link to={'/nasr'}>  
                                             Nasr
                                         </Link>
                                     </li>
-                                    <li onClick={()=>setActive(4)} className={active == 4?'active': null}>
+                                    <li  className={location == 4?'active': null}>
                                         <Link>
                                             Nazm   
                                         </Link>
                                     </li>
-                                    <li onClick={()=>setActive(5)} className={active == 5?'active': null}>
+                                    <li  className={location == 5?'active': null}>
                                         <Link>
                                             Maqolalar
                                         </Link>
                                     </li>
-                                    <li onClick={()=>setActive(6)} className={active == 6?'active': null}>
+                                    <li  className={location == 6?'active': null}>
                                         <Link>
                                             Forum
                                         </Link>

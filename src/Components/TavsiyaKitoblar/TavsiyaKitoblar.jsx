@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './TavsiyaKitoblar.scss'
 import { books } from '../../lib/bookData'
-import { Link } from 'react-router-dom'
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import Tstar from '../../asests/img/tavsiya_star.png'
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -9,6 +9,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { Pagination } from 'swiper/modules';
 function TavsiyaKitoblar() {
+  const navigate = useNavigate()
+ 
+  const [id, setId] =useState(0)
+  function addBookId (id){
+    navigate(`/book-view/${id}`)
+  }
+ 
   return (
     <div className='TavsiyaKitoblar'>
         <div className="container">
@@ -33,7 +40,7 @@ function TavsiyaKitoblar() {
                       books?.map((item,index)=>(
                         <SwiperSlide>
 
-                        <li key={index}>
+                        <li onClick={()=> addBookId(item.id)} key={index}>
                           <img src={item.img} alt="" />
                           <h2>{item.name}</h2>
                           <div className='tavsiya_list_itemb'>
