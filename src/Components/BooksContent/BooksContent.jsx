@@ -6,16 +6,15 @@ import send from "../../asests/img/send.png";
 
 function BooksContent() {
   return (
-    <div className="BooksContent">
-      <div className="container">
-        <div className="big_category">
+    <div className="container">
+      <div className="big_category">
         <div className="foot_link">
           <div className="tag_link">Muallif haqida</div>
           <div className="tag_link">Kitobdan iqtiboslar</div>
           <div className="tag_link">Kitobxonlar taqrizi</div>
         </div>
 
-        <div className="comment_tag">
+        {/* <div className="comment_tag">
           <div className="comment_box">
             <img src={tag} alt="" className="tag_img" />
             <p className="comment">
@@ -44,8 +43,7 @@ function BooksContent() {
               <img src={send} alt="" className="send" />
             </div>
           </div>
-        </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
