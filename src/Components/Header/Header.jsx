@@ -8,7 +8,7 @@ function Header() {
   const [list, setList] = useState(0)
   console.log(list);
   return (
-    <div className={location ==='/signin' || location ==='/signup' || location ==='/account' ? 'Headers' :'Header'}>
+    <div className={location ==='/signin' || location ==='/signup' || location ==='/account' || location ==='/security' ? 'Headers' :'Header'}>
         <div className="container">
                     <div className="header_inner">
                               <nav className='nav'>

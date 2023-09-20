@@ -17,12 +17,14 @@ import { useParams } from 'react-router-dom'
 import { bookData2 } from '../../lib/bookData2'
 import acstarImg from '../../asests/img/acstar-img.png'
 
-
-function Herop() {
-  const { slug } = useParams
-  console.log();
-
-  const [Herop,setHerop] = useState(bookData2.find((item) => item.id == slug))
+function Herop({liked}) {
+  // const Array = []
+  // const [array] = useState([])
+  // console.log(array);
+  // const { slug } = useParams
+  // console.log();
+  // const [Herop,setHerop] = useState(bookData2.find((item) => item.id == slug))
+  // const [array,]
   return (
     <div className='herop'>
       <div className="container">
@@ -129,8 +131,8 @@ function Herop() {
           </div>
           <div className="account_data_father">
             <ul className='account__list'>
-              {
-                bookData2?.map((item, index) => (
+              {/* {
+                array?.map((item, index) => (
                   <li key={index}>
                     <img className='account_father_item' src={item.img} alt="" />
                     <h1 className='account_father_item1'>{item.name}</h1>
@@ -141,7 +143,10 @@ function Herop() {
                     </div>
                   </li>
                 ))
-              }
+              } */}
+              <li>
+                {/* <img src={liked.img} alt="" /> */}
+              </li>
             </ul>
           </div>
         </div>
