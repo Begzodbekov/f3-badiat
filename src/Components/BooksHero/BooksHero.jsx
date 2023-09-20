@@ -8,6 +8,7 @@ import Rate from '../../asests/img/books_rate.png'
 import Kitob from '../../asests/img/books-kitob.png'
 import Audio from '../../asests/img/books_audio.png'
 import Elektron from '../../asests/img/books_elektron.png'
+import Naqsh from '../../asests/img/booksv_naqsh1.png'
 import { books } from '../../lib/bookData'
 function BooksHero() {
   const {slug} = useParams()
@@ -64,6 +65,9 @@ function BooksHero() {
                                     <p>pdf, epub</p>
                                   </div>
                                   <button className='books_ri_qoshish'>Javonga qo’shish </button>
+                                </div>
+                                <div>
+                                  <img className='bookshero_naqsh' src={Naqsh} alt="" />
                                 </div>
                               </div>
                     </div>

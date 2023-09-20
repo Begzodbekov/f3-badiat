@@ -2,10 +2,13 @@ import React from 'react'
 import './ProfileD.scss'
 import profiled from '../../asests/img/profiled.img.svg'
 import profiledCamera from '../../asests/img/profiled__camera.png'
+import { Link } from 'react-router-dom'
+import AccountHeader from '../AccountHeader/AccountHeader'
 function ProfileD() {
   return (
     <div className="container">
       <div className='profiled__blog'>
+        <AccountHeader/>
         <div className="profiled__left">
           <img className='profiled_img' src={profiled} alt="Hamid Olimjon" />
           <span className='ic'>

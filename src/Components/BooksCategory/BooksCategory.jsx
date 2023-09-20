@@ -7,12 +7,13 @@ import { books } from "../../lib/bookData";
 
 function BooksCategory() {
   return (
-    <div>
-
+    <div className="BooksCategory">
+      <div className="container">
+        
       <ul className="book_categories">
         {
-        books?.map((item, index) => (
-          <li key={index} className="book_item">
+          books?.map((item, index) => (
+            <li key={index} className="book_item">
             <Link to={`/book-view/${item.id}`}>
               <img className="book_img" src={item.img} alt="img" />
               <br />
@@ -28,6 +29,7 @@ function BooksCategory() {
           </li>
         ))}
       </ul>
+        </div>
     </div>
   );
 }

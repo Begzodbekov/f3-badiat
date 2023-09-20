@@ -37,7 +37,7 @@ function AuthorD() {
               <h1 className='part1__text1'>{author.name}v</h1>
               <p className='part1__text2'>{author.title1}</p>
             </div>
-            <div className="part2">
+            <div className="author_part2">
               <i class="bi bi-bookmark mark"> Ijodi</i>
               <p className='mark__text1'>{author.title2}</p>
             </div>

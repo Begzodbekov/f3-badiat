@@ -6,7 +6,10 @@ import send from "../../asests/img/send.png";
 
 function BooksContent() {
   return (
-    <div className="container">
+    <div className="BooksContent">
+      <div className="container">
+
+      
       <div className="foot_link">
         <div className="tag_link">Muallif haqida</div>
         <div className="tag_link">Kitobdan iqtiboslar</div>
@@ -41,6 +44,7 @@ function BooksContent() {
           </div>
         </div>
       </div>
+    </div>
     </div>
       </div>
   );
