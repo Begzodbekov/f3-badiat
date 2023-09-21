@@ -1,23 +1,14 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { bookData2 } from "../../lib/bookData2";
 import "./BooksCategory.scss";
 import { books } from "../../lib/bookData";
 import Herop from "../Herop/Herop";
+import { Context } from "../../Context/Context";
 // import { bookData3 } from "../../lib/bookData3";
 
 function BooksCategory() {
-  // const Yurakref = useRef()
-  // console.log(Yurakref);
-  // const [array, setArray] = useState([])
-  // // const Array = []
-  // function fn (item){
-  //   // console.log(item.target);
-  //   array.push(Yurakref)
-  //   console.log(array);
-  // }
-  const [liked, setLiked ] = useState([])
-  console.log(liked);
+  const {sevimlilar, setSevimlilar} = useContext(Context)
   return (
     <div className="BooksCategory">
       <div className="container">
@@ -36,14 +27,14 @@ function BooksCategory() {
 
               </div>
             </Link>
-            <button onClick={()=>{
-              setLiked(item)
+            <button className="bookscategory_yurak" onClick={()=>{
+              sevimlilar.push(item)
+              setSevimlilar([...sevimlilar])
             }} >❤️</button>
           </li>
         ))}
       </ul>
         </div>
-        {/* <Herop data={liked}/> */}
     </div>
   );
 }

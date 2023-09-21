@@ -1,11 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Header.scss'
 import { Link, useLocation } from 'react-router-dom'
 import logo from '../../asests/img/logo.svg'
+import { Context } from '../../Context/Context'
 
 function Header() {
   const location = useLocation().pathname
   const [list, setList] = useState(0)
+  const {ochilishi, setOchilishi} = useContext(Context)
   console.log(list);
   return (
     <div className={location ==='/signin' || location ==='/signup' || location ==='/account' || location ==='/security' ? 'Headers' :'Header'}>
@@ -68,9 +70,9 @@ function Header() {
                                         <div className='odam_list_test'>
                                            <div className='odam_list_testitem1'>
                                             <Link to={'/profile'}>Profile</Link> 
-                                             <i onClick={()=>setList(1)} class="bi bi-chevron-down odam_list_testarrow"></i>
+                                             <i onClick={()=> setOchilishi(!ochilishi)} class="bi bi-chevron-down odam_list_testarrow"></i>
                                            </div>
-                                            <div className={list ==1? 'odam_list_testitem2' :'odam_list_test1item2'}>
+                                            <div className={ochilishi ==false? 'odam_list_testitem2' :'odam_list_test1item2'}>
                                                 <Link to={'/account'}>Account</Link>
                                             </div>
                                         </div>

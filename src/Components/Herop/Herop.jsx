@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Herop.scss'
 import farruxImg from '../../asests/img/farrux-img.png'
 import bgiHerop from '../../asests/img/bgi-herop.png'
@@ -12,12 +12,13 @@ import audioPlay from '../../asests/img/audio-play.svg'
 import audioTrack from '../../asests/img/audio-track.svg'
 import audioSpotify from '../../asests/img/audio-spotify.svg'
 import audioFrame from '../../asests/img/audio-frame.png'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 // import { adibData } from '../../lib/data'
 import { bookData2 } from '../../lib/bookData2'
 import acstarImg from '../../asests/img/acstar-img.png'
+import { Context } from '../../Context/Context'
 
-function Herop({liked}) {
+function Herop() {
   // const Array = []
   // const [array] = useState([])
   // console.log(array);
@@ -25,6 +26,8 @@ function Herop({liked}) {
   // console.log();
   // const [Herop,setHerop] = useState(bookData2.find((item) => item.id == slug))
   // const [array,]
+  const {sevimlilar} = useContext(Context)
+  console.log(sevimlilar);
   return (
     <div className='herop'>
       <div className="container">
@@ -131,9 +134,10 @@ function Herop({liked}) {
           </div>
           <div className="account_data_father">
             <ul className='account__list'>
-              {/* {
-                array?.map((item, index) => (
-                  <li key={index}>
+              {
+                sevimlilar?.map((item)=>(
+                <Link to={`/book-view/${item.id}`}>
+                  <li >
                     <img className='account_father_item' src={item.img} alt="" />
                     <h1 className='account_father_item1'>{item.name}</h1>
                     <h6>O’tkir Hoshimov</h6>
@@ -142,10 +146,16 @@ function Herop({liked}) {
                       <p className='fact__p'>4.1 • 3400 ta fikrlar</p>
                     </div>
                   </li>
+                </Link>
                 ))
-              } */}
+              }
+              {
+                // sevimlilar.map((item, index) => (
+
+                // ))
+              }
               <li>
-                {/* <img src={liked.img} alt="" /> */}
+                {/* <img src={sevimlilar.img} alt="" /> */}
               </li>
             </ul>
           </div>

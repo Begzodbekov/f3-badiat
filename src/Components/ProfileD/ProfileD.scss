@@ -1,14 +1,20 @@
 .profiled__blog {
     
-    .profiled_img {
-        margin-top: 80px;
+    .profiled_img_before {
+        margin-top: 51px;
         border-radius: 50%;
+        width: 201.094px;
+        height: 181.059px;
+        margin-left: -9px;
+        object-fit: cover;
     }
-
-    i {
-        font-size: 30px;
-        color: black;
-
+    .profiled_img_after{
+        margin-top: 51px;
+        border-radius: 50%;
+        width: 201.094px;
+        height: 181.059px;
+        margin-left: -9px;
+        object-fit: cover;
     }
 
 }
@@ -20,12 +26,11 @@
 }
 
 .iconss {
-
     flex-shrink: 0;
     background-color: #fff;
     position: absolute;
     right: -5px;
-    bottom: -90px;
+    bottom: -69px;
     border-radius: 8px;
     background: #F3F6F9;
     padding: 9px;
