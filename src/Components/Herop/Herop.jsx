@@ -27,6 +27,8 @@ function Herop() {
   // const [Herop,setHerop] = useState(bookData2.find((item) => item.id == slug))
   // const [array,]
   const {sevimlilar} = useContext(Context)
+  const {image, setImage}= useContext(Context)
+  console.log(image);
   console.log(sevimlilar);
   return (
     <div className='herop'>
@@ -34,7 +36,7 @@ function Herop() {
         <div className="herop__inner">
           <div>
             <span>
-          <img className='herop__img' src={farruxImg} alt="" />
+          <img className='herop__img' src={image} alt="" />
           </span>
           <span className='un__span'>
             <h5>Oltin kitobxon</h5>
