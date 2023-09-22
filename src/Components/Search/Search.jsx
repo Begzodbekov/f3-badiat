@@ -1,10 +1,11 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import './Search.scss'
 import { adibData } from '../../lib/data'
 import { Context } from '../../Context/Context'
 import Categories from '../Categories/Categories'
 
 function Search() {
+    const ref = useRef()
     let arrCategory = []
     adibData.forEach((item)=>{
         if(!arrCategory.find((i)=> i == item.from)){
@@ -20,41 +21,35 @@ function Search() {
             <div className="container">
                 <div className="search__inner">
                     <div className="search__text">
-                        <h3>
-                            Qidirish
-                        </h3>
-
-                    </div>
-                    <div className="search__inp-btn">
-                        <input type="text" placeholder='Adiblar, kitoblar, audiolar, maqolalar...' />
-                        <button><i className="bi bi-search"></i> Izlash</button>
-                    </div>
-                   
-                </div>
-                
-            </div>
-            <div className="container">
-            <div className="bottom">
-                   <div className="categories__top">
-                        <h2>
-                            Asosiy kategoriyalar
-                        </h2>
-                    </div>
-                    <div className="categories__center">
-                        <div className="ul">
-                        {
-                            arrCategory?.map((item,index)=>(
-                                <button onClick={()=>{
-                                    setActive(index)
-                                    setFrom(item)
-                                }} className={active == index?'actives': 'li'} key={index}>
-                                    {item}
-                                </button>
-                            ))
-                        }
+                        <h1>Qidirish</h1>
+                        <div className='search_inputq'>
+                            <input ref={ref} type="text" placeholder='Adiblar, kitoblar, audiolar, maqolalar...'/>
+                            <button><i class="bi bi-search"></i> Izlash</button>
                         </div>
                     </div>
+                   
+                    <div className="bottom">
+                     <div className="categories__top">
+                          <h2>
+                              Asosiy kategoriyalar
+                          </h2>
+                      </div>
+                      <div className="categories__center">
+                          <div className="ul">
+                          {
+                              arrCategory?.map((item,index)=>(
+                                  <button onClick={()=>{
+                                      setActive(index)
+                                      setFrom(item)
+                                  }} className={active == index?'actives': 'li'} key={index}>
+                                      {item}
+                                  </button>
+                              ))
+                          }
+                          </div>
+                      </div>
                    </div>
+            </div>
             </div>
         </div>
     )

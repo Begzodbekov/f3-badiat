@@ -2,13 +2,17 @@
   background-color: #191919;
 }
 .swiper-wrapper {
-  background-color: red;
+  background-color: #191919;
   width: 1261.896px;
   height: 346.973px !important;
 }
 
 .hero_inner {
   background-image: url("../../");
+  width: 1691px;
+  height: 502px;
+  margin-left: -236px;
+  padding-top: 54px;
 }
 
 .hero__item {
@@ -30,12 +34,12 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-
+  background-color: #263a3d;
   /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 .swiper-slide img {
@@ -44,31 +48,65 @@
   height: 100%;
   object-fit: cover;
 }
-
-.swiper__img {
-  width: 1300px !important;
-}
 .slide {
-  img {
-    position: relative;
-    width: 100%;
-    &::after{
-        content: 'Temuriylar davri  adabiyoti';
-        width: 337px;
-        // position: absolute;
-        color: #c9ac8c;
-        font-size: 61px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-align: left;
-        padding-left: 86px;
-        z-index: 99;
-        background-color: transparent;
-        display: block;
-        position: absolute;
+  border-radius: 10px;
 
-    }
+  position: relative;
+  img {
+    width: 100% ;
+   height: auto;
         }
+       
  
+}
+
+.bottom__hero{
+  position: relative;
+  p{
+    margin-top: -450px;
+    position: absolute;
+    margin-left: 86px;
+    font-size: 60px;
+    width: 347px;
+    text-align: start;
+    color: #C9AC8C;
+    top: 10px;
+    z-index: 99;
+    left: 8px;
+  }
+}
+// .swiper-pagination-bullets{
+// position: absolute;
+// left: 0;
+// background-color: red;
+// }
+.swiper-pagination-bullet{
+  margin-left: 0px !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic .swiper-pagination-bullet{
+  border-radius: 0px !important;
+  width: 78px !important;
+  z-index: 100 !important;
+  overflow: -moz-hidden-unscrollable;
+  margin-left: 0px !important;
+}
+.swiper-pagination-bullet swiper-pagination-bullet-active-next{
+  margin-left:  0px !important;
+}
+.swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic, .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+  left: 200px !important;
+  // transform: translateX(-50%);
+  // white-space: nowrap;
+  top: 300px;
+  width: 1200px !important;
+&::after{
+  content: 'ddsd' !important;
+  left: 200px !important;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  top: 300px;
+  display: block;
+  background-color: red;
+  width: 200px !important;
+}
 }

@@ -2,7 +2,7 @@
     padding-top: 308px;
     background: #191919;
     height: 1178px;
-}
+    margin-left: -100px;}
 
 .categories__list {
     display: flex;
@@ -22,6 +22,7 @@
     text-align: center;
 
     img {
+        object-fit:cover ;
         overflow: hidden;
         width: 173.983px;
         height: 132.186px;
