@@ -6,6 +6,8 @@ import Tstar from '../../asests/img/tavsiya_star.png'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+// import { Pagination } from 'swiper/modules';
 function TavsiyaKitoblar() {
   const navigate = useNavigate()
   function addBookId (id){
