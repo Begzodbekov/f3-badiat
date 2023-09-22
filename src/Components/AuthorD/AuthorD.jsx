@@ -5,11 +5,13 @@ import { bookData2 } from '../../lib/bookData2'
 import { Link, useParams } from 'react-router-dom'
 import { adibData } from '../../lib/data'
 import { books } from '../../lib/bookData'
-import Swiper from 'swiper'
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from 'swiper/react';
 function AuthorD() {
   const { slug } = useParams()
   console.log();
-
   const [author, setAuthor] = useState(adibData.find((item) => item.id == slug))
   return (
     <div className='AuthorD'>
@@ -43,29 +45,49 @@ function AuthorD() {
             </div>
             <div className="part3">
               <span className='head__part3'>
-              <h4 className='part3__text1'>Asarlari</h4>
-              <Link className='see__all' to='/books'>Barchasini ko’rish</Link>
+                <h4 className='part3__text1'>Asarlari</h4>
+                <Link className='see__all' to='/books'>Barchasini ko’rish</Link>
               </span>
 
               <br />
-              <ul className='books__con'>
 
-                {
-                  books.filter((item) => item.adibId == slug).map((item) => (
-                    <li className='books'>
-                      <img className='books__img' width={164} src={item.img} alt="" />
-                      <b className='books__title'>{item.name}</b>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-          </div>
+                <Link className='books__con' to='/books'>
+                  
+                <ul className='books__con2'>
+                <>
+                                <Swiper
+                     slidesPerView={4}
+                    spaceBetween={30}
+                    centeredSlides={true}
+                    // pagination={{
+                    //   clickable: true,
+                    // }}
+                    // modules={[Pagination]}
+                    className="mySwiper">
+                  {
+                    books.filter((item) => item.adibId == slug).map((item) => (
+                      <SwiperSlide>
+
+                      <li className='books'>
+                        <img className='books__img' width={164} src={item.img} alt="" />
+                        <b className='books__title'>{item.name}</b>
+                      </li>
+                      </SwiperSlide>
+
+                    ))
+                  }
+                       </Swiper>
+                    </>
+                </ul>
+
+            </Link>
         </div>
-
       </div>
-
     </div>
+
+      </div >
+
+    </div >
   )
 }
 

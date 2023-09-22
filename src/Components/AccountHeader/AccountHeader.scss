@@ -1,145 +1,44 @@
-.accountheader_inner {
-    width: 1978px;
-    background-color: #ececec;
-    height: 98px;
-    margin-left: -370px;
+.container__accaunt__header{
+    width: 891px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 289px;
+    // background-color:  ;
 }
 
-.accountheader_top {
+.my__accaunt {
+    width: 297px;
+    height: 80px;
     display: flex;
-    justify-content: space-around;
-    width: 1274px;
-    margin-left: 44px;
+    flex-direction: row;
+    border-radius: 4px 4px 0px 0px;
+    background: #FFF;
+}
 
-    .accountheader_top_button1 {
+.accaunt__text {
+    color: #152540;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 9px;
+    margin-left: 9px;
 
-        padding: 23px 239px 22px 23px;
-        border-radius: 4px 4px 0px 0px;
-        background: #FFF;
-        margin-top: 12px;
-        ::after{
-            background-color: black;
-        }
-        a {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-decoration: none;
-        }
+}
 
-        span {
-            padding: 9px 16px 5px 15px;
-            background-color: rgb(21, 37, 64);
-            border-radius: 4px;
-            text-align: center;
-            width: 40px;
-            height: 40px;
-            flex-shrink: 0;
-            font-size: 22px;
-            color: white;
-        }
+.one__accaunt__con {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+    background-color: #152540;
+    padding-top: 2px;
+    padding-bottom: 6px;
+    padding-right: 14px;
+    padding-left: 14px;
 
-        h4 {
-            margin-left: 9px;
-            color: #152540;
-            font-family: Poppins;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            margin-top: 10px;
-        }
-    }
-
-    .accountheader_top_button2 {
-        padding: 23px 239px 22px 23px;
-        border-radius: 4px 4px 0px 0px;
-        background: #F3F6F9;
-        margin-top: 12px;
-        height: 87px;
-
-        a {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-decoration: none;
-        }
-
-        span {
-            padding: 9px 16px 5px 15px;
-            background: #E5EAEE;
-            border-radius: 4px;
-            text-align: center;
-            width: 40px;
-            height: 40px;
-            flex-shrink: 0;
-            font-size: 22px;
-            color: #3699FF;
-        }
-
-        h4 {
-            margin-left: 9px;
-            color: #152540;
-            font-family: Poppins;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            margin-top: 10px;
-        }
-
-    }
-
-    .accountheader_top_button3 {
-        padding: 23px 239px 22px 23px;
-        border-radius: 4px 4px 0px 0px;
-        background: #F3F6F9;
-        margin-top: 12px;
-        height: 87px;
-
-        a {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-decoration: none;
-            margin-top: -11px;
-        }
-
-        .accountheader_span {
-            padding: 9px 16px 5px 15px;
-            background: #E5EAEE;
-            border-radius: 4px;
-            text-align: center;
-            width: 40px;
-            height: 40px;
-            flex-shrink: 0;
-            font-size: 22px;
-            color: #3699FF;
-        }
-
-        h4 {
-            margin-left: -3px;
-            color: #152540;
-            font-family: Poppins;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            margin-top: 10px;
-        }
-
-        .accountheader_span2 {
-            margin-left: 7px;
-
-            h6 {
-                margin-left: 7px;
-                color: #464E5F;
-                font-family: Poppins;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-        }
+    .one {
+        color: white;
     }
 }

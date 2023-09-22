@@ -27,8 +27,19 @@ function Herop() {
   // const [Herop,setHerop] = useState(bookData2.find((item) => item.id == slug))
   // const [array,]
   const {sevimlilar} = useContext(Context)
-  const {image, setImage}= useContext(Context)
-  console.log(image);
+  const arraysev = []
+  arraysev.push(sevimlilar)
+  // const {image, setImage}= useContext(Context)
+  window.localStorage.setItem('yoqtirganlar' , JSON.stringify(arraysev))
+  // if(window.localStorage.getItem('yoqtirganlar')){
+  //   arraysev = JSON.parse(window.localStorage.getItem('yoqtirganlar'))
+  // }
+  // let sdsad =
+  console.log(JSON.parse(window.localStorage.getItem('yoqtirganlar')));
+    // if(window.localStorage.getItem('avatar')){
+  //   inputRef ==  JSON.parse(window.localStorage.getItem('avatar'))
+  // }
+  // console.log(image);
   console.log(sevimlilar);
   return (
     <div className='herop'>
@@ -36,7 +47,7 @@ function Herop() {
         <div className="herop__inner">
           <div>
             <span>
-          <img className='herop__img' src={image} alt="" />
+          {/* <img className='herop__img' src={image} alt="" /> */}
           </span>
           <span className='un__span'>
             <h5>Oltin kitobxon</h5>
@@ -151,13 +162,7 @@ function Herop() {
                 </Link>
                 ))
               }
-              {
-                // sevimlilar.map((item, index) => (
-
-                // ))
-              }
               <li>
-                {/* <img src={sevimlilar.img} alt="" /> */}
               </li>
             </ul>
           </div>
