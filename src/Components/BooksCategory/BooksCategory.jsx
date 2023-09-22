@@ -6,9 +6,22 @@ import { books } from "../../lib/bookData";
 import Herop from "../Herop/Herop";
 import { Context } from "../../Context/Context";
 // import { bookData3 } from "../../lib/bookData3";
+// import React, { useState, useEffect } from 'react';
 
 function BooksCategory() {
+  // const [isFavorite, setIsFavorite] = useState(false);
   const {sevimlilar, setSevimlilar} = useContext(Context)
+ 
+  // const handleClick = () => {
+  //   // При клике на элемент <p>
+  //   // Изменяем состояние и сохраняем его в локальное хранилище
+  //   const updatedIsFavorite = !isFavorite;
+  //   setIsFavorite(updatedIsFavorite);
+  //   localStorage.setItem('isFavorite', updatedIsFavorite.toString());
+  // };
+  function yurak(){
+    
+  }
   return (
     <div className="BooksCategory">
       <div className="container">
@@ -27,7 +40,7 @@ function BooksCategory() {
 
               </div>
             </Link>
-            <button className="bookscategory_yurak" onClick={()=>{
+            <button className="bookscategory_yurak"  onClick={()=>{
               sevimlilar.push(item)
               setSevimlilar([...sevimlilar])
             }} >❤️</button>
