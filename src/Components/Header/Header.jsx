@@ -1,21 +1,23 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Header.scss'
 import { Link, useLocation } from 'react-router-dom'
 import logo from '../../asests/img/logo.svg'
+import { Context } from '../../Context/Context'
 
 function Header() {
   const location = useLocation().pathname
   const [list, setList] = useState(0)
+  const {ochilishi, setOchilishi} = useContext(Context)
   console.log(list);
   return (
-    <div className={location ==='/signin' || location ==='/signup' || location ==='/account' ? 'Headers' :'Header'}>
+    <div className={location ==='/signin' || location ==='/signup' || location ==='/account' || location ==='/security' ? 'Headers' :'Header'}>
         <div className="container">
                     <div className="header_inner">
                               <nav className='nav'>
                                  <div className="logo">
                                     <Link><img src={logo} alt="img" /></Link>
                                  </div>
-                                 <ul>
+                                 <ul className='nav__list'>
                                     <li  className={location == '/'?'active': null}>
                                         <Link to={'/'}>
                                             Bosh sahifa
@@ -28,37 +30,33 @@ function Header() {
                                             Kitoblar
                                         </Link>
                                     </li>
-                                    <li  className={location == 3?'active': null} >
+                                    <li  className={location =='/nasr' ?'active': null} >
                                         <Link to={'/nasr'}>  
                                             Nasr
                                         </Link>
                                     </li>
-                                    <li  className={location == 4?'active': null}>
+                                    <li  className={location == '/nazm'?'active': null}>
                                         <Link>
                                             Nazm   
                                         </Link>
                                     </li>
-                                    <li  className={location == 5?'active': null}>
+                                    <li  className={location == '/maqolalar'?'active': null}>
                                         <Link>
                                             Maqolalar
                                         </Link>
                                     </li>
-                                    <li  className={location == 6?'active': null}>
+                                    <li  className={location == '/forum'? 'active': null}>
                                         <Link>
                                             Forum
                                         </Link>
                                     </li>
-                                    <li className={location !='/' ? 'logins': 'login'}>
+                                    <li className={location !='/' ? 'logins li8': 'login li8'}>
                                         <Link to='/signin'>
                                               login
                                         </Link>
                                     </li>
-                                    <li  className={location !='/signin' && '/' && 'signup' ? 'logins': 'login'}>
-                                        <Link to={'/signin'}>
-                                              login
-                                        </Link>
-                                    </li>
-                                    <li  className={location != '/'? 'logins': 'login'}>
+                                   
+                                    <li  className={location != '/'? 'logins li8': 'login li8'}>
                                         <Link to={'/signup'}>
                                               register
                                         </Link>
@@ -72,9 +70,9 @@ function Header() {
                                         <div className='odam_list_test'>
                                            <div className='odam_list_testitem1'>
                                             <Link to={'/profile'}>Profile</Link> 
-                                             <i onClick={()=>setList(1)} class="bi bi-chevron-down odam_list_testarrow"></i>
+                                             <i onClick={()=> setOchilishi(!ochilishi)} class="bi bi-chevron-down odam_list_testarrow"></i>
                                            </div>
-                                            <div className={list ==1? 'odam_list_testitem2' :'odam_list_test1item2'}>
+                                            <div className={ochilishi ==false? 'odam_list_testitem2' :'odam_list_test1item2'}>
                                                 <Link to={'/account'}>Account</Link>
                                             </div>
                                         </div>

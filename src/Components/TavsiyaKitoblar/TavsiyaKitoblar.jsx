@@ -6,12 +6,13 @@ import Tstar from '../../asests/img/tavsiya_star.png'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
+<<<<<<< HEAD
 
 // import { Pagination } from 'swiper/modules';
+=======
+>>>>>>> f3362ca786104deac4f34974d0a5683f307107f7
 function TavsiyaKitoblar() {
   const navigate = useNavigate()
- 
-  const [id, setId] =useState(0)
   function addBookId (id){
     navigate(`/book-view/${id}`)
   }
@@ -31,10 +32,6 @@ function TavsiyaKitoblar() {
                      slidesPerView={4}
                     spaceBetween={30}
                     centeredSlides={true}
-                    // pagination={{
-                    //   clickable: true,
-                    // }}
-                    // modules={[Pagination]}
                     className="mySwiper">
                     {
                       books?.map((item,index)=>(

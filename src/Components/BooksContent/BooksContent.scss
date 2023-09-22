@@ -1,3 +1,7 @@
+.big_category{
+  margin-left: -250px;
+}
+
 .foot_link {
   padding: 60px 0;
   display: flex;
@@ -7,10 +11,10 @@
 .tag_link {
   color: rgba(255, 255, 255, 0.60);
   font-family: Steinbeck;
-  font-size: 25px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 20px;
 }
 .tag_link:hover{
   color: #C9AC8C;
@@ -21,10 +25,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 100px;
+  width: 1700px;
 }
 
 .comment_box{
-  width: 48%;
+  width: 900px;
   height: 240px;
   background: linear-gradient(263.94deg, #161616 0%, #1E1E1E 98.06%);
   border-radius: 20px;
@@ -35,7 +41,7 @@
 
 .comment{
   height: auto;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
   background: none;
@@ -43,22 +49,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 610px;
 }
 
 .commentb{
   height: auto;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: #fff;
   background: none;
   margin: 20px 0px;
   padding: 37px 0;
+  width: 610px;
 }
 
 .icon{
   display: flex;
   align-items: end;
   justify-content: end;
+  gap: 10px;
 }
 
 .tag_img{

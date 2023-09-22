@@ -1,36 +1,45 @@
-import React, { useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import './ProfileD.scss'
-import profiled from '../../asests/img/profiled.img.svg'
-import profiledCamera from '../../asests/img/profiled__camera.png'
-import { Link } from 'react-router-dom'
+import { Link, json } from 'react-router-dom'
 import AccountHeader from '../AccountHeader/AccountHeader'
+import { Context } from '../../Context/Context'
 function ProfileD() {
-  const [file, setFile] = useState();
-  const handleFile =(e)=>{
-    setFile(e.target.files[0])
-  }
-  // const handleApi =()=>{
-  //   const formData = new FormData()
-  //   formData.append('image', file)
-  //   axios.post('url',formData)
+  // if(window.localStorage.getItem('avatar')){
+  //   inputRef ==  JSON.parse(window.localStorage.getItem('avatar'))
   // }
+  let getavatar = JSON.parse(window.localStorage.getItem('avatar'))
+  console.log(getavatar); 
+
+  const inputRef = useRef(null)
+  const {image, setImage}= useContext(Context)
+  
+  const handleimageclick = ()=>{
+    inputRef.current.click()
+  }
+  const handleimageChange = (event)=>{
+    const file = event.target.files[0]
+    setImage(event.target.files[0])
+    
+    window.localStorage.setItem('avatar', JSON.stringify(file))
+  }
+  const [see, setSee] = useState(false)
   return (
     <div className="container">
       <div className='profiled__blog'>
         <AccountHeader/>
         <div className="profiled__left">
-          <img className='profiled_img' src={profiled} alt="Hamid Olimjon" />
           <span className='ic'>
-            <i class="bi bi-camera iconss" name='file' onChange={handleFile}></i>
-            {/* <Link> */}
-              {/* <img  src={profiledCamera} alt="img" /> */}
-            {/* </Link> */}
-            <input type="file" name='file' onChange={handleFile} />
+            <i class={see== true? {display:"none"} :"bi bi-camera iconss"} name='file' onClick={handleimageclick}></i>
+            {
+              image? <img onClick={()=> setSee(!see)} className={ see == true? 'profiled_img_aftersee' :'profiled_img_after'} src={URL.createObjectURL(image)} alt="Hamid Olimjon" />: <img className='profiled_img_before' src="https://as1.ftcdn.net/v2/jpg/01/26/32/02/1000_F_126320234_AxO4v6wCAh4ZCKfQ9KbNH8YdBIA3XOQY.jpg" alt="Hamid Olimjon" />
+                
+            }
+            <input type="file" onChange={handleimageChange} style={{display:"none"}} ref={inputRef} />
           </span>
         </div>
         <div className="profiled__right">
           <div className="profiled__part1">
-            <h1>My profile</h1>
+            <h1>My profile</h1> 
             <h4>First Name</h4>
             <input type="text" placeholder='John' />
             <p>Please enter your first name.</p>
