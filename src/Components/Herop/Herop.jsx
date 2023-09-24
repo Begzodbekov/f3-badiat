@@ -19,28 +19,20 @@ import acstarImg from '../../asests/img/acstar-img.png'
 import { Context } from '../../Context/Context'
 
 function Herop() {
-  // const Array = []
-  // const [array] = useState([])
-  // console.log(array);
-  // const { slug } = useParams
-  // console.log();
-  // const [Herop,setHerop] = useState(bookData2.find((item) => item.id == slug))
-  // const [array,]
   const {sevimlilar} = useContext(Context)
   const arraysev = []
   arraysev.push(sevimlilar)
-  // const {image, setImage}= useContext(Context)
   window.localStorage.setItem('yoqtirganlar' , JSON.stringify(arraysev))
   // if(window.localStorage.getItem('yoqtirganlar')){
-  //   arraysev = JSON.parse(window.localStorage.getItem('yoqtirganlar'))
+  //   let arss = JSON.parse(window.localStorage.getItem('yoqtirganlar'))
   // }
   // let sdsad =
-  console.log(JSON.parse(window.localStorage.getItem('yoqtirganlar')));
+  // console.log(JSON.parse(window.localStorage.getItem('yoqtirganlar')));
     // if(window.localStorage.getItem('avatar')){
   //   inputRef ==  JSON.parse(window.localStorage.getItem('avatar'))
   // }
-  // console.log(image);
-  console.log(sevimlilar);
+  console.log(arraysev);
+  console.log(JSON.parse(window.localStorage.getItem('yoqtirganlar')));
   return (
     <div className='herop'>
       <div className="container">

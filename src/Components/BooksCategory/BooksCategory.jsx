@@ -10,18 +10,17 @@ import { Context } from "../../Context/Context";
 
 function BooksCategory() {
   // const [isFavorite, setIsFavorite] = useState(false);
-  const {sevimlilar, setSevimlilar} = useContext(Context)
- 
   // const handleClick = () => {
-  //   // При клике на элемент <p>
-  //   // Изменяем состояние и сохраняем его в локальное хранилище
-  //   const updatedIsFavorite = !isFavorite;
-  //   setIsFavorite(updatedIsFavorite);
-  //   localStorage.setItem('isFavorite', updatedIsFavorite.toString());
-  // };
-  function yurak(){
+  //     // При клике на элемент <p>
+  //     // Изменяем состояние и сохраняем его в локальное хранилище
+  //     const updatedIsFavorite = !isFavorite;
+  //     setIsFavorite(updatedIsFavorite);
+  //     localStorage.setItem('isFavorite', updatedIsFavorite.toString());
+  //   };
     
-  }
+    const {sevimlilar, setSevimlilar} = useContext(Context)
+    
+  // fn(JSON.parse(window.localStorage.getItem('yoqtirganlar')))
   return (
     <div className="BooksCategory">
       <div className="container">

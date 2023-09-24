@@ -4,12 +4,13 @@ import { Link, json } from 'react-router-dom'
 import AccountHeader from '../AccountHeader/AccountHeader'
 import { Context } from '../../Context/Context'
 function ProfileD() {
-  // if(window.localStorage.getItem('avatar')){
-  //   inputRef ==  JSON.parse(window.localStorage.getItem('avatar'))
-  // }
-  let getavatar = JSON.parse(window.localStorage.getItem('avatar'))
-  console.log(getavatar); 
-
+  if(window.localStorage.getItem('avatar') ==null){
+    localStorage.setItem('avatar', JSON.stringify([]))
+    //  JSON.parse(window.localStorage.getItem('avatar'))
+  }
+  // let getavatar = JSON.parse(window.localStorage.getItem('avatar'))
+  // console.log(getavatar); 
+  
   const inputRef = useRef(null)
   const {image, setImage}= useContext(Context)
   
@@ -19,8 +20,8 @@ function ProfileD() {
   const handleimageChange = (event)=>{
     const file = event.target.files[0]
     setImage(event.target.files[0])
+    // window.localStorage.setItem('avatar', JSON.stringify(file))
     
-    window.localStorage.setItem('avatar', JSON.stringify(file))
   }
   const [see, setSee] = useState(false)
   return (

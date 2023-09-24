@@ -15,7 +15,7 @@ function Search() {
     })
     const [active , setActive]=useState(0)
     const {from,setFrom}= useContext(Context)
-    console.log(arrCategory);
+    // console.log(arrCategory);
     return (
         <div className='Search'>
             <div className="container">
