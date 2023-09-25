@@ -5,7 +5,17 @@ import { Context } from '../../Context/Context'
 import Categories from '../Categories/Categories'
 
 function Search() {
-    const ref = useRef()
+    // function addSearch(){
+    //     if(Ref.current.value == search){
+    //         console.log('ok');
+    //     }else{
+    //         console.log('salom');
+    //     }
+    // }
+    // const {search, setSearch} = useContext(Context)
+    // const Ref = useRef()
+    // console.log(search);
+    // console.log(Ref.current.value);
     let arrCategory = []
     adibData.forEach((item)=>{
         if(!arrCategory.find((i)=> i == item.from)){
@@ -15,7 +25,7 @@ function Search() {
     })
     const [active , setActive]=useState(0)
     const {from,setFrom}= useContext(Context)
-    // console.log(arrCategory);
+    console.log(arrCategory);
     return (
         <div className='Search'>
             <div className="container">
@@ -23,8 +33,10 @@ function Search() {
                     <div className="search__text">
                         <h1>Qidirish</h1>
                         <div className='search_inputq'>
-                            <input ref={ref} type="text" placeholder='Adiblar, kitoblar, audiolar, maqolalar...'/>
+                            <input type="text" placeholder='Adiblar, kitoblar, audiolar, maqolalar...'/>
+                            {/* <input ref={Ref} type="text" placeholder='Adiblar, kitoblar, audiolar, maqolalar...'/> */}
                             <button><i class="bi bi-search"></i> Izlash</button>
+                            {/* <button onClick={()=> setSearch(Ref.current.value)}><i class="bi bi-search"></i> Izlash</button> */}
                         </div>
                     </div>
                    

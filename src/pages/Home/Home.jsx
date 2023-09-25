@@ -7,7 +7,7 @@ function Home() {
   return (
     <div className='Home'>
        <Hero/>
-      <Search/>
+      <Search />
       <Categories/>
     </div>
   )

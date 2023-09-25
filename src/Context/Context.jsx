@@ -7,8 +7,9 @@ function Provider ({children}){
     const [sevimlilar , setSevimlilar] = useState([])
     const [ochilishi, setOchilishi] = useState(true)
     const [image, setImage] = useState("")
+    const [search, setSearch] = useState("")
     return(
-        <Context.Provider value={{from,setFrom,sevimlilar,setSevimlilar ,ochilishi, setOchilishi,image,setImage}}>
+        <Context.Provider value={{from,setFrom,sevimlilar,setSevimlilar ,ochilishi, setOchilishi,image,setImage,search,setSearch}}>
             {children}
         </Context.Provider>
     )
