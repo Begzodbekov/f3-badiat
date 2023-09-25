@@ -18,9 +18,19 @@ function BooksCategory() {
   //     localStorage.setItem('isFavorite', updatedIsFavorite.toString());
   //   };
     
-    const {sevimlilar, setSevimlilar} = useContext(Context)
-    
+    // const {sevimlilar, setSevimlilar} = useContext(Context)
+    // window.localStorage.setItem('yoqtirganlar' , JSON.stringify(sevimlilar))
+    // console.log(sevimlilar);
+    // console.log(JSON.parse(window.localStorage.getItem('yoqtirganlar')));
   // fn(JSON.parse(window.localStorage.getItem('yoqtirganlar')))
+  let localData = []
+  if(window.localStorage.getItem('localBook')){
+    localData = JSON.parse(window.localStorage.getItem('localBook'))
+  }
+  function addlocalData (id){
+    localData.push(books.find((item)=> item.id == id))
+    window.localStorage.setItem('localBook', JSON.stringify(localData))
+  }
   return (
     <div className="BooksCategory">
       <div className="container">
@@ -39,10 +49,7 @@ function BooksCategory() {
 
               </div>
             </Link>
-            <button className="bookscategory_yurak"  onClick={()=>{
-              sevimlilar.push(item)
-              setSevimlilar([...sevimlilar])
-            }} >❤️</button>
+            <button className="bookscategory_yurak"  onClick={()=> addlocalData(item.id)} >❤️</button>
           </li>
         ))}
       </ul>
