@@ -22,7 +22,6 @@ function Herop() {
   const {sevimlilar} = useContext(Context)
   const arraysev = []
   arraysev.push(sevimlilar)
-  window.localStorage.setItem('yoqtirganlar' , JSON.stringify(arraysev))
   // if(window.localStorage.getItem('yoqtirganlar')){
   //   let arss = JSON.parse(window.localStorage.getItem('yoqtirganlar'))
   // }
@@ -32,7 +31,7 @@ function Herop() {
   //   inputRef ==  JSON.parse(window.localStorage.getItem('avatar'))
   // }
   console.log(arraysev);
-  console.log(JSON.parse(window.localStorage.getItem('yoqtirganlar')));
+  const localBook =  JSON.parse(window.localStorage.getItem('localBook'))
   return (
     <div className='herop'>
       <div className="container">
@@ -140,7 +139,7 @@ function Herop() {
           <div className="account_data_father">
             <ul className='account__list'>
               {
-                sevimlilar?.map((item)=>(
+                localBook?.map((item)=>(
                 <Link to={`/book-view/${item.id}`}>
                   <li >
                     <img className='account_father_item' src={item.img} alt="" />
