@@ -7,24 +7,8 @@ import { useRef } from 'react'
 
 function Categories({  }) {
     const {from} =useContext(Context)
-    // console.log(from);
     const {search, setSearch} = useContext(Context)
     const Liref = useRef()
-    // if(adibData?.filter((item)=> item.name.includes(search[''])== true)){
-    //     console.log('bor');
-    // }else{
-    //     console.log('yoq');
-    // }
-    // if(search == adibData?.name){
-    //     console.log('teng');
-    // }else{
-    //     console.log('tengmas');
-    // }
-    // console.log(search.includes('kivi'));
-    // const saer = search.filter(search => search.includes("a"))
-    // if(search. == adibData.filter((item)=> item.name == search) ){
-    //     console.log('teng');
-    // }
     return (
         
         <div className='Categories'>
@@ -33,7 +17,6 @@ function Categories({  }) {
                    
                     <ul className='categories__list'>
                         {
-                            // adibData?.filter((item)=> item.from == from).map((item,index)=>(
                                 adibData?.filter((item)=> item.name.includes(search) && item.from == from).map((item,index)=>(
                                 
                                 <li ref={Liref} key={index} className='categories__item'>
