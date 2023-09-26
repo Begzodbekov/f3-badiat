@@ -12,8 +12,8 @@ function Search() {
     //         console.log('salom');
     //     }
     // }
-    // const {search, setSearch} = useContext(Context)
-    // const Ref = useRef()
+    const {search, setSearch} = useContext(Context)
+    const Ref = useRef()
     // console.log(search);
     // console.log(Ref.current.value);
     let arrCategory = []
@@ -33,10 +33,10 @@ function Search() {
                     <div className="search__text">
                         <h1>Qidirish</h1>
                         <div className='search_inputq'>
-                            <input type="text" placeholder='Adiblar, kitoblar, audiolar, maqolalar...'/>
-                            {/* <input ref={Ref} type="text" placeholder='Adiblar, kitoblar, audiolar, maqolalar...'/> */}
-                            <button><i class="bi bi-search"></i> Izlash</button>
-                            {/* <button onClick={()=> setSearch(Ref.current.value)}><i class="bi bi-search"></i> Izlash</button> */}
+                            {/* <input type="text" placeholder='Adiblar, kitoblar, audiolar, maqolalar...'/> */}
+                            <input onKeyUp={()=> setSearch(Ref.current.value)} ref={Ref} type="text" placeholder='Adiblar, kitoblar, audiolar, maqolalar...'/>
+                            {/* <button><i class="bi bi-search"></i> Izlash</button> */}
+                            <button ><i class="bi bi-search"></i> Izlash</button>
                         </div>
                     </div>
                    

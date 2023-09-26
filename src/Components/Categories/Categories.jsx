@@ -3,11 +3,18 @@ import { adibData } from '../../lib/data'
 import './Categories.scss'
 import { Link } from 'react-router-dom'
 import { Context } from '../../Context/Context'
+import { useRef } from 'react'
 
 function Categories({  }) {
     const {from} =useContext(Context)
-    console.log(from);
-    // const {search, setSearch} = useContext(Context)
+    // console.log(from);
+    const {search, setSearch} = useContext(Context)
+    const Liref = useRef()
+    // if(adibData?.filter((item)=> item.name.includes(search[''])== true)){
+    //     console.log('bor');
+    // }else{
+    //     console.log('yoq');
+    // }
     // if(search == adibData?.name){
     //     console.log('teng');
     // }else{
@@ -26,9 +33,10 @@ function Categories({  }) {
                    
                     <ul className='categories__list'>
                         {
-                            adibData?.filter((item)=> item.from == from).map((item,index)=>(
+                            // adibData?.filter((item)=> item.from == from).map((item,index)=>(
+                                adibData?.filter((item)=> item.name.includes(search) && item.from == from).map((item,index)=>(
                                 
-                                <li  key={index} className='categories__item'>
+                                <li ref={Liref} key={index} className='categories__item'>
                                     <Link to={`/author/${item.id}`}>
                                   
                                         <img src={item.img} alt="img" />
