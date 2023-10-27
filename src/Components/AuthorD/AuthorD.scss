@@ -181,10 +181,10 @@
 }
 
 .books {
-    width: 165px;
-    height: 402px;
-    margin-left: 20px;
-    margin-right: 20px;
+    // width: 165px;
+    // height: 402px;
+    // margin-left: 20px;
+    // margin-right: 20px;
 }
 
 .books__con {
@@ -244,3 +244,44 @@
     display: flex;
     flex-direction: row;
 }
+.swiper-wrapper{
+    width: 100%;
+}
+
+.swiper {
+    // width: 100%;
+    // height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    // background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper {
+    width: 500px     ;
+    margin-right: 250px;
+    position: relative;
+}
+  .swiper__11{
+    width: 30% !important;
+    // background-color: red;
+    img{
+        width: 100%;
+        height: 60%;
+        position: absolute;
+        top: 0;
+    }
+  }
